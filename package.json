@@ -1,0 +1,30 @@
+{
+    "name": "styless.css",
+    "version": "0.0.0",
+    "description": "Minimal classless CSS framework for faster development.",
+    "scripts": {
+        "compile": "sass --style expanded --source-map --embed-sources --no-error-css scss/:dist/"
+    },
+    "sass": "scss/styless.scss",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/moonharelabs/styless.css.git"
+    },
+    "keywords": [
+        "css",
+        "simple",
+        "minimal",
+        "css",
+        "framework",
+        "fast"
+    ],
+    "author": "Kavindu Santhusa",
+    "license": "Unlicense",
+    "bugs": {
+        "url": "https://github.com/moonharelabs/styless.css/issues"
+    },
+    "homepage": "https://github.com/moonharelabs/styless.css#readme",
+    "devDependencies": {
+        "sass": "^1.42.1"
+    }
+}
