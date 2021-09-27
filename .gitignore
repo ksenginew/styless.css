@@ -103,6 +103,5 @@ dist
 # TernJS port file
 .tern-port
 
-# added output css files and `build` file
+# added output css files
 *.css
-build
