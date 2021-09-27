@@ -3,7 +3,10 @@
     "version": "0.0.0",
     "description": "Minimal classless CSS framework for faster development.",
     "scripts": {
-        "compile": "postcss styless.css > styless.min.css"
+        "build:fmt": "sass styless.scss styless.css",
+        "build:min": "sass styless.scss styless.min.css --style=compressed",
+        "build": "npm run build:fmt && npm run build:min",
+        "watch": "npm run build:fmt -- --watch"
     },
     "repository": {
         "type": "git",
@@ -24,9 +27,6 @@
     },
     "homepage": "https://github.com/moonharelabs/styless.css#readme",
     "devDependencies": {
-        "postcss": "^8.3.8",
-        "postcss-cli": "9.0.0",
-        "cssnano": "5.0.8",
-        "autoprefixer": "10.3.6"
+        "sass": "^1.42.1"
     }
 }
