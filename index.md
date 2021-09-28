@@ -3,6 +3,9 @@
 Quickly write simple sites with Styless, a simple front-end open source stylesheet. Perfect for content first sites or blogs.
 </h3>
 
+|Get Started|Download|
+|-|-|
+
 ## ⬇️ Installation
 Install Styless source Sass files via npm, ~Composer, or Meteor~.
 ```bash
