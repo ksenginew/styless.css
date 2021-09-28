@@ -2,13 +2,13 @@
 
 Minimal classless CSS framework for faster development.
 
-<a href="issues/new?template=bug_report.md">Report bug</a>
+<a href="https://github.com/ksenginew/styless.css/issues/new?template=bug_report.md">Report bug</a>
 ·
-<a href="issues/new?template=feature_request.md">Request feature</a>
+<a href="https://github.com/ksenginew/styless.css/issues/new?template=feature_request.md">Request feature</a>
 
 ## Quick start
 
-Looking to quickly add Styless to your project? Use jsDelivr, a free open source CDN. Using a package manager or need to download the source files? Head to the downloads page.
+Looking to quickly add Styless to your project? Use jsDelivr, a free open source CDN. Using a package manager or need to download the source files? Head to the [downloads] page.
 
 ### Installation
 
@@ -16,9 +16,8 @@ Copy-paste the stylesheet <link> into your <head> before all other stylesheets t
 
 ```html
 <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    href="https://cdn.jsdelivr.net/npm/styless@0.0.0/styless.min.css"
     rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
     crossorigin="anonymous"
 />
 ```
@@ -41,14 +40,6 @@ Be sure to have your pages set up with the latest design and development standar
             rel="stylesheet"
             crossorigin="anonymous"
         />
-
-        <!-- Optional code syntax highlighter -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/themes/prism.css"
-            rel="stylesheet"
-        />
-        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/components/prism-core.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
 
         <title>Hello, world!</title>
     </head>
