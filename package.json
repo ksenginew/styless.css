@@ -28,5 +28,13 @@
     "homepage": "https://github.com/moonharelabs/styless.css#readme",
     "devDependencies": {
         "sass": "^1.42.1"
-    }
+    },
+    "style": "dist/css/bootstrap.css",
+    "sass": "styless.scss",
+    "main": "styless.min.css",
+    "module": "styless.min.css",
+    "files": [
+        "*.{css,map}",
+        "*.scss"
+    ]
 }
