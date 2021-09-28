@@ -1,14 +1,15 @@
-# Styless.css
-
+# Styless.CSS
 Minimal classless CSS framework for faster development.
 
-<a href="https://github.com/ksenginew/styless.css/issues/new?template=bug_report.md">Report bug</a>
+[Report bug](https://github.com/ksenginew/styless.css/issues/new?template=bug_report.md)
 ·
-<a href="https://github.com/ksenginew/styless.css/issues/new?template=feature_request.md">Request feature</a>
+[Request feature](https://github.com/ksenginew/styless.css/issues/new?template=feature_request.md)
+
+---
 
 ## Quick start
 
-Looking to quickly add Styless to your project? Use jsDelivr, a free open source CDN. Using a package manager or need to download the source files? Head to the [downloads] page.
+Looking to quickly add Styless to your project? Use jsDelivr, a free open source CDN. Using a package manager or need to download the source files? Head to the [downloads](https://styless.netlify.app/test) page.
 
 ### Installation
 
@@ -51,11 +52,11 @@ Be sure to have your pages set up with the latest design and development standar
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](blob/main/.github/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](issues/new).
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/ksenginew/styless.css/blob/main/.github/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](issues/new).
 
 ## Contributing
 
-Please read through our [contributing guidelines](blob/main/.github/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+Please read through our [contributing guidelines](https://github.com/ksenginew/styless.css/blob/main/.github/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
 ## Community
 
@@ -65,4 +66,4 @@ Get updates on Styless's development and chat with the project maintainers and c
 
 ## Copyright and license
 
-Code released under the [MIT License](blob/main/LICENSE).
+Code released under the [MIT License](https://github.com/ksenginew/styless.css/main/LICENSE).
