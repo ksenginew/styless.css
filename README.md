@@ -62,7 +62,8 @@ Please read through our [contributing guidelines](https://github.com/ksenginew/s
 
 Get updates on Styless's development and chat with the project maintainers and community members.
 
--   Follow [@moonharelabs on Twitter](https://twitter.com/harelabs).
+[![Follow us on twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/harelabs).
+[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](ksengine.github@gmail.com).
 
 ## Copyright and license
 
