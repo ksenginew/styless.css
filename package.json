@@ -1,6 +1,6 @@
 {
     "name": "styless.css",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Minimal classless CSS framework for faster development.",
     "scripts": {
         "build:fmt": "sass styless.scss styless.css",
