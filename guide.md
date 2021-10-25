@@ -30,6 +30,7 @@ Be sure to have your pages set up with the latest design and development standar
     <h1>Hello, world!</h1>
   </body>
 </html>
+```
 For next steps, use our official [examples](/examples) to start.
 
 ## Important globals
