@@ -3,7 +3,7 @@
 Quickly write simple sites with Styless, a simple front-end open source stylesheet. Perfect for content first sites or blogs.
 </h3>
 
-<button><a href="/guide">Get Started</a></button>.<button><a href="/download">Download</a></button>
+<button><a href="guide">Get Started</a></button>.<button><a href="download">Download</a></button>
 
 ## ⬇️ Installation
 Install Styless source Sass files via npm, ~Composer, or Meteor~.
