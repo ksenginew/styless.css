@@ -1,40 +1,28 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 *,
-:after,
-:before {
+::before,
+::after {
   box-sizing: border-box;
 }
 
 html {
-  -webkit-text-size-adjust: 100%;
   line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
-  -o-tab-size: 4;
   tab-size: 4;
 }
 
 body {
-  word-wrap: break-word;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-}
-
-body:after,
-body:before {
-  content: "";
-  display: table;
-}
-
-body:after {
-  clear: both;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 hr {
-  border: 0.125em solid #d3d3d3;
-  color: inherit;
   height: 0;
+  color: inherit;
 }
 
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
 
@@ -45,9 +33,9 @@ strong {
 
 code,
 kbd,
-pre,
-samp {
-  font-family: ui-monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   font-size: 1em;
 }
 
@@ -72,8 +60,8 @@ sup {
 }
 
 table {
-  border-color: inherit;
   text-indent: 0;
+  border-color: inherit;
 }
 
 button,
@@ -83,7 +71,7 @@ select,
 textarea {
   font-family: inherit;
   font-size: 100%;
-  line-height: 1.15;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -92,10 +80,10 @@ select {
   text-transform: none;
 }
 
+button,
 [type=button],
 [type=reset],
-[type=submit],
-button {
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -141,83 +129,6 @@ progress {
 
 summary {
   display: list-item;
-}
-
-a {
-  color: #1e90ff;
-  text-decoration: none;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-}
-
-blockquote {
-  border-left: 0.25em solid #f5f5f5;
-  color: gray;
-  margin: 0;
-  padding: 0 1em;
-}
-
-h1 code,
-h1 tt,
-h2 code,
-h2 tt,
-h3 code,
-h3 tt,
-h4 code,
-h4 tt,
-h5 code,
-h5 tt,
-h6 code,
-h6 tt {
-  font-size: inherit;
-}
-
-h1,
-h2 {
-  border-bottom: 1px solid #d3d3d3;
-  padding-bottom: 0.3em;
-}
-
-li + li {
-  margin-top: 0.25em;
-}
-
-dl dt {
-  font-style: italic;
-  font-weight: 600;
-  margin-top: 16px;
-}
-
-dl dd {
-  margin: 0 16px;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  display: block;
-  max-width: 100%;
-  overflow: auto;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-th {
-  font-weight: 600;
-}
-
-td,
-th {
-  border: 1px solid gray;
-  padding: 6px 13px;
-}
-
-tr:nth-child(2n) {
-  background-color: #f5f5f5;
 }
 
 /*# sourceMappingURL=styless.css.map */
