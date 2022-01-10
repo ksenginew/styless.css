@@ -137,4 +137,8 @@ article {
   margin: auto;
 }
 
+article > * {
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=styless.css.map */
