@@ -139,5 +139,9 @@ summary {
 article {
   padding: 1rem; // my magic number
   max-width: 65ch;
-  margin:auto;
+  margin: auto;
+}
+
+article > * {
+  max-width: 100%;
 }
