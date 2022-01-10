@@ -142,6 +142,139 @@ article > * {
   overflow: auto;
 }
 
+blockquote {
+  color: gray;
+  border-left: 0.25rem solid currentColor;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem;
+}
+
+blockquote *:last-child {
+  margin-bottom: 0;
+}
+
+.button,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  border: 0.1rem solid gray;
+  border-radius: 0.25em;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button:focus, .button:hover,
+button:focus,
+button:hover,
+input[type=button]:focus,
+input[type=button]:hover,
+input[type=reset]:focus,
+input[type=reset]:hover,
+input[type=submit]:focus,
+input[type=submit]:hover {
+  outline: 0;
+}
+
+[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+input[type=color],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url],
+input[type=week],
+input:not([type]),
+textarea,
+select {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 0.1rem solid gray;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+input[type=color]:focus,
+input[type=date]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=email]:focus,
+input[type=month]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+input[type=url]:focus,
+input[type=week]:focus,
+input:not([type]):focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+}
+
+select[multiple] {
+  background: none;
+  height: auto;
+}
+
+textarea {
+  min-height: 6.5rem;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-spacing: 0;
+  overflow-x: auto;
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: 0.1rem solid gray;
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  letter-spacing: -0.1rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
 h1 {
   font-size: 3.5rem;
 }
@@ -166,22 +299,8 @@ h6 {
   font-size: 1.25rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-}
-
-blockquote {
-  margin-left: 0;
-  border-left: 0.125rem solid currentColor;
-  color: gray;
-}
-
-button, input[type=button], input[type=reset], input[type=submit] {
-  border: 1px solid gray;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  padding: 0.5rem;
-  text-align: center;
+img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=styless.css.map */
