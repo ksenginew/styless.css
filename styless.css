@@ -131,8 +131,9 @@ summary {
   display: list-item;
 }
 
-main {
+article {
   padding: 1rem;
+  max-width: 65ch;
 }
 
 /*# sourceMappingURL=styless.css.map */
