@@ -134,14 +134,13 @@ summary {
 section,
 article {
   padding: 1rem;
-  max-width: 64rem;
 }
 
 article {
   margin: auto;
 }
 
-article>* {
+article > * {
   max-width: 100%;
   overflow: auto;
 }
