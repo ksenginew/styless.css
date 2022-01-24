@@ -162,8 +162,9 @@ input[type=button],
 input[type=reset],
 input[type=submit] {
   border: 0.1rem solid gray;
-  border-radius: 0.25rem;
+  border-radius: 0.25em;
   cursor: pointer;
+  display: inline-block;
   padding: 0.5rem;
   text-align: center;
   white-space: nowrap;
@@ -181,7 +182,7 @@ select {
   background-color: transparent;
   border: 0.1rem solid gray;
   border-radius: 0.25rem;
-  padding: 0.5rem;
+  padding: 1rem;
   width: 100%;
 }
 
