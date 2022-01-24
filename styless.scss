@@ -136,13 +136,16 @@ summary {
 
 // ---
 
+section,
 article {
-  padding: 1rem; // my magic number
-  max-width: 65ch;
+  padding: 1rem;
+}
+
+article {
   margin: auto;
 }
 
-article > * {
+article>* {
   max-width: 100%;
   overflow: auto;
 }
@@ -159,7 +162,6 @@ blockquote *:last-child {
   margin-bottom: 0;
 }
 
-.button,
 button,
 input[type='button'],
 input[type='reset'],
@@ -173,18 +175,6 @@ input[type='submit'] {
   white-space: nowrap;
 }
 
-.button:focus, .button:hover,
-button:focus,
-button:hover,
-input[type='button']:focus,
-input[type='button']:hover,
-input[type='reset']:focus,
-input[type='reset']:hover,
-input[type='submit']:focus,
-input[type='submit']:hover {
-  outline: 0;
-}
-
 [disabled] {
   cursor: not-allowed;
   opacity: .5;
@@ -194,20 +184,7 @@ input[type='submit']:hover {
 
 // TODO hr
 
-input[type='color'],
-input[type='date'],
-input[type='datetime'],
-input[type='datetime-local'],
-input[type='email'],
-input[type='month'],
-input[type='number'],
-input[type='password'],
-input[type='search'],
-input[type='tel'],
-input[type='text'],
-input[type='url'],
-input[type='week'],
-input:not([type]),
+input,
 textarea,
 select {
   -webkit-appearance: none;
@@ -218,22 +195,10 @@ select {
   width: 100%;
 }
 
-input[type='color']:focus,
-input[type='date']:focus,
-input[type='datetime']:focus,
-input[type='datetime-local']:focus,
-input[type='email']:focus,
-input[type='month']:focus,
-input[type='number']:focus,
-input[type='password']:focus,
-input[type='search']:focus,
-input[type='tel']:focus,
-input[type='text']:focus,
-input[type='url']:focus,
-input[type='week']:focus,
-input:not([type]):focus,
-textarea:focus,
-select:focus {
+button,
+input,
+textarea,
+select {
   outline: 0;
 }
 
@@ -286,12 +251,29 @@ h6 {
   margin-top: 0;
 }
 
-h1 {font-size: 3.5rem;}
-h2 {font-size: 2.75rem;}
-h3 {font-size: 2.25rem;}
-h4 {font-size: 1.75rem;}
-h5 {font-size: 1.50rem;}
-h6 {font-size: 1.25rem;}
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.75rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.50rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+}
 
 img {
   max-width: 100%;
