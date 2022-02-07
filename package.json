@@ -27,6 +27,6 @@
     "main": "dist/styless.min.css",
     "module": "dist/styless.min.css",
     "files": [
-        "*.{css,map}",
+        "*.{css,map}"
     ]
 }
