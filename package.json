@@ -3,10 +3,7 @@
     "version": "0.0.1",
     "description": "Minimal classless CSS framework for faster development.",
     "scripts": {
-        "build:fmt": "sass styless.scss styless.css",
-        "build:min": "sass styless.scss styless.min.css --style=compressed",
-        "build": "npm run build:fmt && npm run build:min",
-        "watch": "npm run build:fmt -- --watch"
+        "build": "npx clean-css-cli --source-map -o dist/styless.min.css styless.css && cp styless.css dist/styless.css"
     },
     "repository": {
         "type": "git",
@@ -26,15 +23,10 @@
         "url": "https://github.com/moonharelabs/styless.css/issues"
     },
     "homepage": "https://github.com/moonharelabs/styless.css#readme",
-    "devDependencies": {
-        "sass": "^1.42.1"
-    },
-    "style": "dist/css/bootstrap.css",
-    "sass": "styless.scss",
-    "main": "styless.min.css",
-    "module": "styless.min.css",
+    "style": "dist/styless.min.css",
+    "main": "dist/styless.min.css",
+    "module": "dist/styless.min.css",
     "files": [
         "*.{css,map}",
-        "*.scss"
     ]
 }
