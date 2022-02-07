@@ -40,6 +40,24 @@ code, kbd, pre, samp {
   font-size: 1em;
 }
 
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+pre code {
+    font-size: inherit;
+    color: inherit;
+    word-break: normal;
+  }
+}
+
+code {
+  word-wrap: break-word;
+}
+
 small {
   font-size: 80%;
 }
