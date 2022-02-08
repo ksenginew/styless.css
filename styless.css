@@ -38,6 +38,7 @@ b, strong {
 code, kbd, pre, samp {
   font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   font-size: 1em;
+  background: #f5f5f5; /* whitesmoke */
 }
 
 pre {
@@ -80,6 +81,14 @@ sup {
 table {
   text-indent: 0;
   border-color: inherit;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 0.125rem solid #d3d3d3; /* lightgray */
+  text-align: left;
+  padding: .5rem;
 }
 
 button, input, optgroup, select, textarea {
@@ -143,4 +152,15 @@ summary {
 
 article {
   padding: 1rem;
+}
+
+dt {
+  font-weight: bolder;
+}
+
+blockquote {
+  padding: 1rem;
+  margin: 0;
+  background: #f5f5f5; /* whitesmoke */
+  border-left: 0.25rem solid #d3d3d3; /* lightgray */
 }
