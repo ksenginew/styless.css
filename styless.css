@@ -3,7 +3,7 @@
 }
 
 html {
-  line-height: 1.15;
+  line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
   tab-size: 4;
@@ -218,6 +218,12 @@ textarea {
   resize: vertical;
 }
 
-img {
+img, picture, video, canvas, svg {
+  display: block;
   max-width: 100%;
+}
+
+article {
+  padding: 1rem;
+  margin: auto;
 }
