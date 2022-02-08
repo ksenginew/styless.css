@@ -221,6 +221,17 @@ summary {
 
 article {
   padding: 1rem;
+  max-width: 64rem;
+  margin: auto;
+}
+
+nav {
+  background: #f5f5f5; /* whitesmoke */
+}
+
+nav > *:hover {
+  padding: 0.5rem;
+  background: 1px solid #d3d3d3; /* lightgray */
 }
 
 dt {
