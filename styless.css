@@ -315,3 +315,7 @@ blockquote {
 img {
   max-width: 100%;
 }
+
+figure {
+  margin: 1rem 0;
+}
