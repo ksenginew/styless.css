@@ -34,9 +34,7 @@ hr {
 }
 
 h6, h5, h4, h3, h2, h1 {
-  margin: 0 0.5rem;
   font-weight: 500;
-  line-height: 1.2;
 }
 
 h1 {
@@ -63,10 +61,6 @@ h6 {
   font-size: 1rem;
 }
 
-p {
-  margin-bottom: 1rem 0;
-}
-
 abbr[title] {
   text-decoration: underline dotted;
 }
@@ -77,11 +71,7 @@ strong {
 }
 
 a {
-  color: #0d6efd;
-}
-
-a:hover {
-  color: #0a58ca;
+  color: hsl(220, 100%, 50%);
 }
 
 code,
@@ -91,14 +81,11 @@ samp {
   font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
     monospace;
   font-size: 1em;
-  background: #f5f5f5;
-  /* whitesmoke */
+  background: #f5f5f5; /* whitesmoke */
 }
 
 pre {
   display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
   padding: 1rem;
   overflow: auto;
 }
@@ -147,8 +134,7 @@ caption {
 
 td,
 th {
-  border: 0.125rem solid #d3d3d3;
-  /* lightgray */
+  border: 0.125rem solid #d3d3d3; /* lightgray */
   text-align: inherit;
   padding: 0.5rem;
 }
@@ -160,19 +146,14 @@ select,
 textarea {
   font-family: inherit;
   font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
 }
 
 input,
 select,
 textarea {
   padding: 0.25rem 0.5rem;
-  margin-bottom: 0.5rem;
-  background: #f5f5f5;
-  /* whitesmoke */
-  border: 1px solid #d3d3d3;
-  /* lightgray */
+  background: #f5f5f5; /* whitesmoke */
+  border: 1px solid #d3d3d3; /* lightgray */
   width: 12rem;
   outline: 0;
 }
@@ -197,11 +178,8 @@ select {
 button {
   -webkit-appearance: button;
   padding: 0.25rem 0.5rem;
-  margin-bottom: 0.5rem;
-  background: #fff;
-  /* white */
-  border: 1px solid #d3d3d3;
-  /* lightgray */
+  background: #fff; /* white */
+  border: 1px solid #d3d3d3; /* lightgray */
   min-width: 6rem;
 }
 
@@ -209,8 +187,7 @@ button {
 [type="reset"]:hover,
 [type="submit"]:hover,
 button:hover {
-  background: #f5f5f5;
-  /* whitesmoke */
+  background: #f5f5f5; /* whitesmoke */
 }
 
 [type="button"]:focus,
@@ -220,8 +197,7 @@ button:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: #808080;
-  /* gray */
+  border-color: #808080; /* gray */
   outline: 0;
 }
 
@@ -276,8 +252,7 @@ article {
 }
 
 header {
-  background: #f5f5f5;
-  /* whitesmoke */
+  background: #f5f5f5; /* whitesmoke */
 }
 
 nav ul {
@@ -285,8 +260,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: #f5f5f5;
-  /* whitesmoke */
+  background: #f5f5f5; /* whitesmoke */
 }
 
 nav li a {
@@ -297,8 +271,7 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #d3d3d3;
-  /* lightgray */
+  background-color: #d3d3d3; /* lightgray */
 }
 
 dt {
@@ -306,16 +279,10 @@ dt {
 }
 
 blockquote {
-  padding-left: 1rem;
-  margin-right: 1rem 0;
-  border-left: 0.25rem solid #d3d3d3;
-  /* lightgray */
+  background: #f5f5f5; /* whitesmoke */
+  border-left: 0.25rem solid #d3d3d3; /* lightgray */
 }
 
 img {
   max-width: 100%;
-}
-
-figure {
-  margin: 1rem 0;
 }
