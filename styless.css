@@ -80,7 +80,6 @@ strong {
 
 a {
   color: #0d6efd;
-  text-decoration: none;
 }
 
 a:hover {
@@ -94,7 +93,8 @@ samp {
   font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
     monospace;
   font-size: 1em;
-  background: #f5f5f5; /* whitesmoke */
+  background: #f5f5f5;
+  /* whitesmoke */
 }
 
 pre {
@@ -149,7 +149,8 @@ caption {
 
 td,
 th {
-  border: 0.125rem solid #d3d3d3; /* lightgray */
+  border: 0.125rem solid #d3d3d3;
+  /* lightgray */
   text-align: inherit;
   padding: 0.5rem;
 }
@@ -170,8 +171,10 @@ select,
 textarea {
   padding: 0.25rem 0.5rem;
   margin-bottom: 0.5rem;
-  background: #f5f5f5; /* whitesmoke */
-  border: 1px solid #d3d3d3; /* lightgray */
+  background: #f5f5f5;
+  /* whitesmoke */
+  border: 1px solid #d3d3d3;
+  /* lightgray */
   width: 12rem;
   outline: 0;
 }
@@ -197,8 +200,10 @@ button {
   -webkit-appearance: button;
   padding: 0.25rem 0.5rem;
   margin-bottom: 0.5rem;
-  background: #fff; /* white */
-  border: 1px solid #d3d3d3; /* lightgray */
+  background: #fff;
+  /* white */
+  border: 1px solid #d3d3d3;
+  /* lightgray */
   min-width: 6rem;
 }
 
@@ -206,7 +211,8 @@ button {
 [type="reset"]:hover,
 [type="submit"]:hover,
 button:hover {
-  background: #f5f5f5; /* whitesmoke */
+  background: #f5f5f5;
+  /* whitesmoke */
 }
 
 [type="button"]:focus,
@@ -216,7 +222,8 @@ button:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: #808080; /* gray */
+  border-color: #808080;
+  /* gray */
   outline: 0;
 }
 
@@ -271,7 +278,8 @@ article {
 }
 
 header {
-  background: #f5f5f5; /* whitesmoke */
+  background: #f5f5f5;
+  /* whitesmoke */
 }
 
 nav ul {
@@ -279,7 +287,8 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: #f5f5f5; /* whitesmoke */
+  background: #f5f5f5;
+  /* whitesmoke */
 }
 
 nav li a {
@@ -290,7 +299,8 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #d3d3d3; /* lightgray */
+  background-color: #d3d3d3;
+  /* lightgray */
 }
 
 dt {
@@ -301,8 +311,10 @@ blockquote {
   padding: 1rem;
   margin-left: 0;
   margin-right: 0;
-  background: #f5f5f5; /* whitesmoke */
-  border-left: 0.25rem solid #d3d3d3; /* lightgray */
+  background: #f5f5f5;
+  /* whitesmoke */
+  border-left: 0.25rem solid #d3d3d3;
+  /* lightgray */
 }
 
 img {
