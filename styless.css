@@ -89,7 +89,12 @@ table {
   width: 100%;
 }
 
-td, th {
+table caption {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+table td, th {
   border: 0.125rem solid #d3d3d3; /* lightgray */
   text-align: left;
   padding: .5rem;
@@ -100,6 +105,16 @@ button, input, optgroup, select, textarea {
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
+}
+
+input, select, textarea {
+  padding: .5rem;
+  margin-bottom: .5rem;
+  background: #f5f5f5; /* whitesmoke */
+  border: 1px solid #d3d3d3; /* lightgray */
+  box-shadow: none;
+  width: 12rem;
+  outline: 0;
 }
 
 button, select {
@@ -159,7 +174,7 @@ article {
 }
 
 dt {
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 blockquote {
@@ -168,4 +183,8 @@ blockquote {
   margin-right: 0;
   background: #f5f5f5; /* whitesmoke */
   border-left: 0.25rem solid #d3d3d3; /* lightgray */
+}
+
+img {
+    max-width: 100%;
 }
