@@ -45,6 +45,7 @@ pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
+  padding: 1rem;
   overflow: auto;
 }
 
@@ -160,7 +161,8 @@ dt {
 
 blockquote {
   padding: 1rem;
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
   background: #f5f5f5; /* whitesmoke */
   border-left: 0.25rem solid #d3d3d3; /* lightgray */
 }
