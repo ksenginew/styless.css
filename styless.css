@@ -122,7 +122,7 @@ input[type='checkbox'], input[type='radio'] {
   width: auto;
 }
 
-input {
+input:hover, select:hover, textarea:hover {
   border-color: #808080; /* gray */
 }
 
