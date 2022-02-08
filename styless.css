@@ -1,12 +1,14 @@
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
-      scroll-behavior: smooth;
-    }
+    scroll-behavior: smooth;
+  }
 }
 
 html {
@@ -19,7 +21,8 @@ html {
 body {
   margin: 0;
   background-color: #fff;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 hr {
@@ -34,12 +37,17 @@ abbr[title] {
   text-decoration: underline dotted;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bolder;
 }
 
-code, kbd, pre, samp {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+code,
+kbd,
+pre,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    monospace;
   font-size: 1em;
   background: #f5f5f5; /* whitesmoke */
 }
@@ -53,10 +61,9 @@ pre {
 }
 
 pre code {
-    font-size: inherit;
-    color: inherit;
-    word-break: normal;
-  }
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
 }
 
 code {
@@ -67,7 +74,8 @@ small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -91,25 +99,32 @@ table {
 
 table caption {
   font-weight: 700;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-table td, th {
+table td,
+th {
   border: 0.125rem solid #d3d3d3; /* lightgray */
   text-align: left;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   padding: 0.25rem 0.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   background: #f5f5f5; /* whitesmoke */
   border: 1px solid #d3d3d3; /* lightgray */
   width: 12rem;
@@ -120,26 +135,44 @@ textarea {
   resize: vertical;
 }
 
-input[type='checkbox'], input[type='radio'] {
+input[type="checkbox"],
+input[type="radio"] {
   width: auto;
 }
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
-[type=button], [type=reset], [type=submit], button {
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
   -webkit-appearance: button;
   padding: 0.25rem 0.5rem;
-  margin-bottom: .5rem;
-  background: #f5f5f5; /* whitesmoke */
+  margin-bottom: 0.5rem;
+  background: #fff; /* white */
   border: 1px solid #d3d3d3; /* lightgray */
   min-width: 6rem;
-  outline: 0;
 }
 
-[type=button]:focus, [type=reset]:focus, [type=submit]:focus, button:focus, input:focus, select:focus, textarea:focus {
+[type="button"]:hover,
+[type="reset"]:hover,
+[type="submit"]:hover,
+button:hover {
+  background: #f5f5f5; /* whitesmoke */
+}
+
+[type="button"]:focus,
+[type="reset"]:focus,
+[type="submit"]:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
   border-color: #808080; /* gray */
+  outline: 0;
 }
 
 ::-moz-focus-inner {
@@ -163,11 +196,12 @@ progress {
   vertical-align: baseline;
 }
 
-::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
@@ -184,7 +218,6 @@ progress {
 summary {
   display: list-item;
 }
-
 
 article {
   padding: 1rem;
@@ -203,5 +236,5 @@ blockquote {
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
