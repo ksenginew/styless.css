@@ -25,6 +25,9 @@ body {
 hr {
   height: 0;
   color: inherit;
+  border: 0;
+  border-bottom: 0.125rem solid currentColor;
+  opacity: 0.25;
 }
 
 abbr[title] {
