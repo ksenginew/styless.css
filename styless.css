@@ -1,42 +1,239 @@
-*, ::before, ::after {
+/* Document */
+
+/* Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`. */
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
+/* Root */
+
+:root {
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+}
+
+
 html {
   line-height: 1.5;
+  /* 1. Prevent adjustments of font size after orientation changes in iOS. */
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
   tab-size: 4;
 }
 
+/* Body */
+
 body {
+  /* 1. Remove the margin in all browsers. */
   margin: 0;
+  /* 2. As a best practice, apply a default `background-color`. */
+  background-color: #fff;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
+/* Content grouping */
+
 hr {
   height: 0;
+  /* 1. Reset Firefox's gray color */
   color: inherit;
+  margin: 1rem 0;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 0.25;
 }
+
+/* Typography */
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  /* 1. Remove top margins from headings
+      By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top 
+      margin for easier control within type scales as it avoids margin collapsing.
+  */
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* Reset margins on paragraphs */
+
+/* Similarly, the top margin on `<p>`s get reset. However, we also reset the */
+/* bottom margin to use `rem` units instead of `em`. */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Abbreviations */
 
 abbr[title] {
+  /* 1. Add the correct text decoration in Chrome, Edge, Opera, and Safari. */
   text-decoration: underline dotted;
+  /* 2. Add explicit cursor to indicate changed behavior. */
+  cursor: help;
+  /* 3. Prevent the text-decoration to be skipped. */
+  text-decoration-skip-ink: none;
 }
 
-b, strong {
+
+/* Address */
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+
+/* Lists */
+
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+
+dd {
+  margin-bottom: .5rem;
+  /* 1. Undo browser default */
+  margin-left: 0;
+}
+
+
+/* Blockquote */
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+
+/* Strong */
+
+/* Add the correct font weight in Chrome, Edge, and Safari */
+b,
+strong {
+
   font-weight: bolder;
 }
 
-code, kbd, samp, pre {
+code,
+kbd,
+samp,
+pre {
   font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   font-size: 1em;
 }
 
+pre {
+  display: block;
+  /* 1. Remove browser default top margin */
+  margin-top: 0;
+  /* 2. Reset browser default of `1em` to use `rem`s */
+  margin-bottom: 1rem;
+  /* 3. Don't allow content to break outside */
+  overflow: auto;
+}
+
+/* Account for some code outputs that place code tags in pre tags */
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+}
+
+
+code {
+  word-wrap: break-word;
+}
+
+/* Streamline the style when inside anchors to avoid broken underline and more */
+code a>code {
+  color: inherit;
+}
+
+
+kbd {
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.875em;
+  border-radius: 0.25rem;
+}
+
+kbd kbd {
+  padding: 0;
+  font-size: 1em;
+}
+
+/* Small */
+
+/* Add the correct font size in all browsers */
 small {
   font-size: 80%;
 }
 
-sub, sup {
+/* Mark */
+
+mark {
+  padding: 0.1875em;
+  background-color: #fff3cd;
+}
+
+/* Sub and Sup */
+
+/* Prevent `sub` and `sup` elements from affecting the line height in
+  all browsers. */
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -51,37 +248,203 @@ sup {
   top: -0.5em;
 }
 
+/* Links */
+a {
+  text-decoration: underline;
+}
+
+/* And undo these styles for placeholder links/named anchors (without href).
+It would be more straightforward to just use a[href] in previous block, but that
+causes specificity issues in many other styles that are too complex to fix.
+See https://github.com/twbs/bootstrap/issues/19402 */
+
+a:not([href]):not([class]) {
+  text-decoration: none;
+}
+
+
+/* Figures */
+
+/* Apply a consistent margin strategy (matches our type styles). */
+
+figure {
+  margin: 0 0 1rem;
+}
+
+/* Images and content */
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+/* Tables */
+
+/* Prevent double borders */
+
 table {
   text-indent: 0;
   border-color: inherit;
+  caption-side: bottom;
+  border-collapse: collapse;
 }
 
-button, input, optgroup, select, textarea {
+
+caption {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+
+
+th {
+  /* 1. Matches default `<td>` alignment by inheriting `text-align`. */
+  text-align: inherit;
+  /* 2. Fix alignment for Safari */
+  text-align: -webkit-match-parent;
+}
+
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+
+/* Forms */
+
+
+label {
+  /* 1. Allow labels to use `margin` for spacing. */
+  display: inline-block;
+}
+
+
+button {
+  /* Remove the default `border-radius` that macOS Chrome adds.
+     See https://github.com/twbs/bootstrap/issues/24093 */
+  border-radius: 0;
+}
+
+/* Explicitly remove focus outline in Chromium when it shouldn't be
+visible (e.g. as result of mouse click or touch tap). It already
+should be doing this automatically, but seems to currently be
+confused and applies its very visible two-tone outline anyway. */
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
+  /* 1. Remove the margin in Firefox and Safari */
   margin: 0;
 }
 
-button, select {
+button,
+select {
+  /* Remove the inheritance of text transform in Firefox */
   text-transform: none;
 }
 
-button, [type='button'], [type='reset'], [type='submit'] {
+
+/* Set the cursor for non-`<button>` buttons */
+
+/* Details at https://github.com/twbs/bootstrap/pull/30562 */
+[role="button"] {
+  cursor: pointer;
+}
+
+select {
+  /* Remove the inheritance of word-wrap in Safari. */
+  /* See https://github.com/twbs/bootstrap/issues/24990 */
+  word-wrap: normal;
+}
+
+/* Undo the opacity change from Chrome */
+select:disabled {
+  opacity: 1;
+}
+
+/* Remove the dropdown arrow only from text type inputs built with datalists in Chrome. */
+/* See https://stackoverflow.com/a/54997118 */
+
+[list]:not([type="date"]):not([type="datetime-local"]):not([type="month"]):not([type="week"]):not([type="time"])::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+
+/* 3. Opinionated: add "hand" cursor to non-disabled button elements. */
+
+
+button,
+/* 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+      controls in Android 4. */
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  /* 2. Correct the inability to style clickable types in iOS and Safari. */
   -webkit-appearance: button;
 }
 
+button:not(:disabled),
+[type='button']:not(:disabled),
+[type='reset']:not(:disabled),
+[type='submit']:not(:disabled) {
+  /* 3. Opinionated: add "hand" cursor to non-disabled button elements. */
+  cursor: pointer;
+}
+
+/* Remove inner border and padding from Firefox, but don't restore the outline like Normalize. */
 ::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
+/* 
 :-moz-focusring {
   outline: 1px dotted ButtonText;
-}
+} */
 
 :-moz-ui-invalid {
   box-shadow: none;
+}
+
+
+
+textarea {
+  /* 1. Textareas should really only resize vertically so they don't break their (horizontal) containers. */
+  resize: vertical;
+}
+
+
+
+fieldset {
+  /* 1. Browsers set a default `min-width: min-content;` on fieldsets,
+    unlike e.g. `<div>`s, which have `min-width: 0;` by default.
+    So we reset that to ensure fieldsets behave more like a standard block element.
+    See https://github.com/twbs/bootstrap/issues/12359
+    and https://html.spec.whatwg.org/multipage/#the-fieldset-and-legend-elements */
+  min-width: 0;
+  /* 2. Reset the default outline behavior of fieldsets so they don't affect page layout. */
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 legend {
@@ -92,7 +455,8 @@ progress {
   vertical-align: baseline;
 }
 
-::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -217,7 +581,11 @@ textarea {
   resize: vertical;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
