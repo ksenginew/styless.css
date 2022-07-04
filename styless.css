@@ -438,7 +438,7 @@ dd {
 
 blockquote {
   padding-left: 1rem;
-  border-left: 0.125rem solid #d3d3d3;
+  border-left: 0.25rem solid #d3d3d3;
 }
 
 pre {
@@ -456,6 +456,7 @@ pre code {
 
 code {
   word-wrap: break-word;
+  font-weight: 600;
 }
 
 /* Streamline the style when inside anchors to avoid broken underline and more */
