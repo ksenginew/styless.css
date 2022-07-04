@@ -529,6 +529,7 @@ caption {
 th {
   /* Matches default `<td>` alignment by inheriting `text-align`. */
   text-align: inherit;
+  font-weight: 500;
 }
 
 thead,
@@ -552,6 +553,9 @@ th:first-child {
   padding-left: 0;
 }
 
+tr {
+  border-bottom: 1px solid gray;
+}
 
 /* Forms */
 
