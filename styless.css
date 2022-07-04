@@ -95,7 +95,7 @@ Add the correct font weight in Edge and Safari.
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 /**
@@ -321,6 +321,7 @@ html {
 body {
   /* As a best practice, apply a default `background-color`. */
   background-color: #fff;
+  color: #141414;
 }
 
 hr {
@@ -476,7 +477,7 @@ mark {
 
 /* Links */
 a {
-  color: #00aaff;
+  color: #000061;
   text-decoration: underline;
 }
 
