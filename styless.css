@@ -477,7 +477,7 @@ mark {
 
 /* Links */
 a {
-  color: #2E2EFF;
+  color: #0049db;
   text-decoration: underline;
 }
 
@@ -497,6 +497,10 @@ a:not([href]):not([class]) {
 
 figure {
   margin: 0 0 1rem;
+}
+
+figcaption {
+  color: #575757;
 }
 
 /* Images and content */
