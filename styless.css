@@ -531,7 +531,6 @@ th {
   text-align: inherit;
 }
 
-
 thead,
 tbody,
 tfoot,
@@ -541,6 +540,16 @@ th {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
+}
+
+td,
+th {
+  padding: 0.5rem;
+}
+
+td:first-child,
+th:first-child {
+  padding-left: 0;
 }
 
 
