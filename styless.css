@@ -553,12 +553,12 @@ th:first-child {
   padding-left: 0;
 }
 
-tr {
-  border: 1px solid gray;
+thead {
+  border-bottom: 2px solid gray;
 }
 
-thead {
-  border: 2px solid gray;
+tbody tr {
+  border-bottom: 1px solid gray;
 }
 
 
