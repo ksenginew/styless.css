@@ -375,6 +375,13 @@ h6 {
 
 /* Reset margins*/
 
+address,
+aside,
+blockquote,
+details,
+dialog,
+form,
+table,
 p,
 ol,
 ul,
