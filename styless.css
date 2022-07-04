@@ -554,8 +554,14 @@ th:first-child {
 }
 
 tr {
-  border-bottom: 1px solid gray;
+  border: 1px solid gray;
 }
+
+thead {
+  border: 2px solid gray;
+}
+
+
 
 /* Forms */
 
