@@ -678,8 +678,7 @@ input[type="tel"],
 input[type="url"],
 input[type="password"],
 input[type="file"],
-textarea,
-select {
+textarea {
   display: block;
   padding: .375rem .75rem;
   background-color: transparent;
@@ -697,8 +696,13 @@ input[type="file"] {
 }
 
 select {
-  appearance: auto;
-  height: 2.0625rem;
+  display: block;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid lightgray;
+  border-radius: .375rem;
+  min-width: 17.5rem;
+  height: 2.02rem;
 }
 
 :disabled {
