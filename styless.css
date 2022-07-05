@@ -542,6 +542,7 @@ svg {
 table {
   caption-side: bottom;
   border-collapse: collapse;
+  border-color: gray;
 }
 
 
@@ -568,25 +569,10 @@ th {
   border-width: 0;
 }
 
-td,
-th {
+table> :not(caption)>*>* {
   padding: 0.5rem;
+  border-bottom-width: 1px;
 }
-
-td:first-child,
-th:first-child {
-  padding-left: 0;
-}
-
-thead {
-  border-bottom: 2px solid gray;
-}
-
-tbody tr {
-  border-bottom: 1px solid gray;
-}
-
-
 
 /* Forms */
 
