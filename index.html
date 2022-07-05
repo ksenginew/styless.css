@@ -16,6 +16,10 @@
       padding: 10rem 0;
     }
 
+    .row {
+      display: flex;
+    }
+
     .col {
       width: 50%;
     }
@@ -47,7 +51,7 @@
           <a href="/downloads">downloads</a>
           page.
         </p>
-        <div>
+        <div class="row">
           <article class="col">
             <h3>Install via package manager</h3>
             <p>
@@ -64,17 +68,12 @@
           <article class="col">
             <h3>Include via CDN</h3>
             <p>
-              When you only need to include Bootstrap’s compiled CSS or JS, you can use jsDelivr. See it in action with
-              our simple quick start, or browse the examples to jumpstart your next project. You can also choose to
-              include Popper and our JS separately.
+              When you only need to include Styless’s compiled CSS or JS, you can use jsDelivr. See it in action with
+              our simple quick start, or browse the examples to jumpstart your next project.
             </p>
 
-            <pre class="language-html"><code>&lt;!-- Styless CSS --&gt;
-    &lt;link
-        href=&quot;https://cdn.jsdelivr.net/npm/styless.css@0.0.2/dist/styless.min.css&quot;
-        rel=&quot;stylesheet&quot;
-        crossorigin=&quot;anonymous&quot;
-    /&gt;</code></pre>
+            <pre
+              class="language-html"><code>&lt;link href=&quot;https://cdn.jsdelivr.net/npm/styless.css@0.0.2/dist/styless.min.css&quot; rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot; /&gt;</code></pre>
           </article>
         </div>
 
