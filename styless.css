@@ -636,7 +636,10 @@ article {
   max-width: 64rem;
 }
 
-button {
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
   display: inline-block;
   padding: 0.375rem 0.75rem;
   text-align: center;
