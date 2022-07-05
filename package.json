@@ -1,6 +1,6 @@
 {
     "name": "styless.css",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Minimal classless CSS framework for faster development.",
     "scripts": {
         "build": "npx clean-css-cli --source-map -o dist/styless.min.css styless.css && cp styless.css dist/styless.css"
