@@ -682,6 +682,6 @@ select {
   cursor: not-allowed;
 }
 
-:read-only {
+input:read-only {
   filter: grayscale(50%);
 }
