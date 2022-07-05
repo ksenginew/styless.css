@@ -446,6 +446,7 @@ pre {
   /* Don't allow content to break outside */
   overflow: auto;
   background-color: #f5f5f5;
+  padding: 1rem;
 }
 
 code {
