@@ -649,7 +649,7 @@ button,
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  border: none;
+  border: 1px solid lightgray;
   background-color: transparent;
 }
 
@@ -672,4 +672,8 @@ select {
   -moz-appearance: none;
   appearance: none;
   border-radius: .375rem;
+}
+
+:disabled {
+  opacity: 0.38;
 }
