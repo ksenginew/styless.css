@@ -696,6 +696,11 @@ input[type="file"] {
   padding: 0
 }
 
+select {
+  appearance: auto;
+  height: 2.0625rem;
+}
+
 :disabled {
   opacity: 0.38;
   cursor: not-allowed;
