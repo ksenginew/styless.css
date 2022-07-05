@@ -672,8 +672,10 @@ select {
   -moz-appearance: none;
   appearance: none;
   border-radius: .375rem;
+  min-width: 17.5rem;
 }
 
 :disabled {
   opacity: 0.38;
+  cursor: not-allowed;
 }
