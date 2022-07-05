@@ -665,6 +665,10 @@ input::file-selector-button {
   background-color: transparent;
 }
 
+input::file-selector-button {
+  border: none;
+}
+
 input:not([type]),
 input[type="email"],
 input[type="number"],
@@ -688,11 +692,15 @@ select {
   min-width: 17.5rem;
 }
 
+input[type="file"] {
+  padding: 0
+}
+
 :disabled {
   opacity: 0.38;
   cursor: not-allowed;
 }
 
-input:read-only {
-  filter: grayscale(50%);
+[readonly] {
+  background-color: #f5f5f5;
 }
