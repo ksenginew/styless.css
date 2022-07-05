@@ -649,5 +649,6 @@ button,
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  border: none;
   background-color: transparent;
 }
