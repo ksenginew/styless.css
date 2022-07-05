@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/themes/prism.css" rel="stylesheet" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/themes/prism.css" rel="stylesheet" /> -->
   <!-- Styless.CSS -->
   <link href="styless.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/components/prism-core.min.js"></script>
@@ -18,10 +18,11 @@
 
     .row {
       display: flex;
+      gap: 1rem;
     }
 
     .col {
-      width: 50%;
+      flex: 1;
     }
   </style>
 </head>
@@ -52,7 +53,7 @@
           page.
         </p>
         <div class="row">
-          <article class="col">
+          <section class="col">
             <h3>Install via package manager</h3>
             <p>
               Install Styless’s source Sass and JavaScript files via npm
@@ -64,8 +65,8 @@
             <pre><code>npm install styless.css</code></pre>
             <!--<pre><code>gem install bootstrap -v 5.2.0-beta1</code></pre>-->
             <!--Read our installation docs for more info and additional package managers.-->
-          </article>
-          <article class="col">
+          </section>
+          <section class="col">
             <h3>Include via CDN</h3>
             <p>
               When you only need to include Styless’s compiled CSS or JS, you can use jsDelivr. See it in action with
@@ -74,7 +75,7 @@
 
             <pre
               class="language-html"><code>&lt;link href=&quot;https://cdn.jsdelivr.net/npm/styless.css@0.0.2/dist/styless.min.css&quot; rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot; /&gt;</code></pre>
-          </article>
+          </section>
         </div>
 
         <h4>Starter template</h4>
