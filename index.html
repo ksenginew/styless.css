@@ -15,6 +15,10 @@
     .banner {
       padding: 10rem 0;
     }
+
+    .col {
+      width: 50%;
+    }
   </style>
 </head>
 
@@ -35,38 +39,53 @@
           <button onclick="location.href='download'">Download</button>
         </div>
       </div>
-      <h2>Introduction</h2>
-      <p>
-        Get started with Styless, with jsDelivr and a template starter page.
-      </p>
-      <h3>Quick start</h3>
-      <p>
-        Looking to quickly add Styless to your project? Use jsDelivr, a free
-        open source CDN. Using a package manager or need to download the
-        source files? Head to the
-        <a href="/downloads">downloads</a>
-        page.
-      </p>
-      <h4>Installation</h4>
-      <p>
-        Copy-paste the stylesheet <code>&lt;link&gt;</code> into your
-        <code>&lt;head&gt;</code> before all other stylesheets to load our
-        CSS.
-      </p>
-      <pre class="language-html"><code>&lt;!-- Styless CSS --&gt;
-&lt;link
-    href=&quot;https://cdn.jsdelivr.net/npm/styless.css@0.0.2/dist/styless.min.css&quot;
-    rel=&quot;stylesheet&quot;
-    crossorigin=&quot;anonymous&quot;
-/&gt;</code></pre>
-      <h4>Starter template</h4>
-      <p>
-        Be sure to have your pages set up with the latest design and
-        development standards. That means using an HTML5 doctype and including
-        a viewport meta tag for proper responsive behaviors. Put it all
-        together and your pages should look like this:
-      </p>
-      <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+      <h2>Quick start</h3>
+        <p>
+          Looking to quickly add Styless to your project? Use jsDelivr, a free
+          open source CDN. Using a package manager or need to download the
+          source files? Head to the
+          <a href="/downloads">downloads</a>
+          page.
+        </p>
+        <div>
+          <article class="col">
+            <h3>Install via package manager</h3>
+            <p>
+              Install Styless’s source Sass and JavaScript files via npm
+              <!--, RubyGems, Composer, or Meteor-->. Package managed
+              installs don’t include documentation or our full build scripts.
+              <!--You can also use our npm template repo to
+          quickly generate a Styless project via npm.-->
+            </p>
+            <pre><code>npm install styless.css</code></pre>
+            <!--<pre><code>gem install bootstrap -v 5.2.0-beta1</code></pre>-->
+            <!--Read our installation docs for more info and additional package managers.-->
+          </article>
+          <article class="col">
+            <h3>Include via CDN</h3>
+            <p>
+              When you only need to include Bootstrap’s compiled CSS or JS, you can use jsDelivr. See it in action with
+              our simple quick start, or browse the examples to jumpstart your next project. You can also choose to
+              include Popper and our JS separately.
+            </p>
+
+            <pre class="language-html"><code>&lt;!-- Styless CSS --&gt;
+    &lt;link
+        href=&quot;https://cdn.jsdelivr.net/npm/styless.css@0.0.2/dist/styless.min.css&quot;
+        rel=&quot;stylesheet&quot;
+        crossorigin=&quot;anonymous&quot;
+    /&gt;</code></pre>
+          </article>
+        </div>
+
+        <h4>Starter template</h4>
+        <p>
+          Be sure to have your pages set up with the latest design and
+          development standards. That means using an HTML5 doctype and including
+          a viewport meta tag for proper responsive behaviors. Put it all
+          together and your pages should look like this:
+        </p>
+        <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
     &lt;head&gt;
         &lt;!-- Required meta tags --&gt;
@@ -86,53 +105,53 @@
         &lt;h1&gt;Hello, world!&lt;/h1&gt;
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-      <p>
-        For next steps, use our <a href="/examples">examples</a> to start.
-      </p>
-      <h3>Important globals</h3>
-      <p>
-        Styless employs a handful of important global styles and settings that
-        you’ll need to be aware of when using it, all of which are almost
-        exclusively geared towards the normalization of cross browser styles.
-        Let’s dive in.
-      </p>
-      <h4>HTML5 doctype</h4>
-      <p>
-        Styless requires the use of the HTML5 doctype. Without it, you’ll see
-        some funky incomplete styling, but including it shouldn’t cause any
-        considerable hiccups.
-      </p>
+        <p>
+          For next steps, use our <a href="/examples">examples</a> to start.
+        </p>
+        <h3>Important globals</h3>
+        <p>
+          Styless employs a handful of important global styles and settings that
+          you’ll need to be aware of when using it, all of which are almost
+          exclusively geared towards the normalization of cross browser styles.
+          Let’s dive in.
+        </p>
+        <h4>HTML5 doctype</h4>
+        <p>
+          Styless requires the use of the HTML5 doctype. Without it, you’ll see
+          some funky incomplete styling, but including it shouldn’t cause any
+          considerable hiccups.
+        </p>
 
-      <h4>Responsive meta tag</h4>
-      <p>
-        To ensure proper rendering and touch zooming for all devices, add the
-        responsive viewport meta tag to your <code>&lt;head&gt;</code>.
-      </p>
+        <h4>Responsive meta tag</h4>
+        <p>
+          To ensure proper rendering and touch zooming for all devices, add the
+          responsive viewport meta tag to your <code>&lt;head&gt;</code>.
+        </p>
 
-      <p>You can see an example of this in action in the starter template.</p>
-      <h4>Box-sizing</h4>
-      <p>
-        For more straightforward sizing in CSS, we switch the global
-        box-sizing value from content-box to border-box. This ensures padding
-        does not affect the final computed width of an element, but it can
-        cause problems with some third-party software like Google Maps and
-        Google Custom Search Engine.
-      </p>
-      <p>
-        On the rare occasion you need to override it, use something like the
-        following:
-      </p>
-      <p>
-        Learn more about
-        <a href="https://css-tricks.com/box-sizing/" rel="nofollow">box model and sizing at CSS Tricks</a>.
-      </p>
-      <h4>Normalize</h4>
-      <p>
-        For improved cross-browser rendering, we use
-        <a href="https://github.com/sindresorhus/modern-normalize">modern-normalize</a>
-        to correct inconsistencies across browsers and devices while providing
-        slightly more opinionated resets to common HTML elements.
-      </p>
+        <p>You can see an example of this in action in the starter template.</p>
+        <h4>Box-sizing</h4>
+        <p>
+          For more straightforward sizing in CSS, we switch the global
+          box-sizing value from content-box to border-box. This ensures padding
+          does not affect the final computed width of an element, but it can
+          cause problems with some third-party software like Google Maps and
+          Google Custom Search Engine.
+        </p>
+        <p>
+          On the rare occasion you need to override it, use something like the
+          following:
+        </p>
+        <p>
+          Learn more about
+          <a href="https://css-tricks.com/box-sizing/" rel="nofollow">box model and sizing at CSS Tricks</a>.
+        </p>
+        <h4>Normalize</h4>
+        <p>
+          For improved cross-browser rendering, we use
+          <a href="https://github.com/sindresorhus/modern-normalize">modern-normalize</a>
+          to correct inconsistencies across browsers and devices while providing
+          slightly more opinionated resets to common HTML elements.
+        </p>
     </article>
   </main>
 </body>
