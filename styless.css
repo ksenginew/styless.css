@@ -447,13 +447,6 @@ pre {
   overflow: auto;
 }
 
-/* Account for some code outputs that place code tags in pre tags */
-pre code {
-  font-size: inherit;
-  color: inherit;
-  word-break: normal;
-}
-
 code {
   word-wrap: break-word;
   font-weight: 600;
@@ -462,6 +455,14 @@ code {
 /* Streamline the style when inside anchors to avoid broken underline and more */
 code a>code {
   color: inherit;
+}
+
+/* Account for some code outputs that place code tags in pre tags */
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+  font-weight: normal;
 }
 
 kbd {
