@@ -7,7 +7,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/moonharelabs/styless.css.git"
+        "url": "git+https://github.com/ksenginew/styless.css.git"
     },
     "keywords": [
         "css",
@@ -20,13 +20,14 @@
     "author": "Kavindu Santhusa",
     "license": "Unlicense",
     "bugs": {
-        "url": "https://github.com/moonharelabs/styless.css/issues"
+        "url": "https://github.com/ksenginew/styless.css/issues"
     },
-    "homepage": "https://github.com/moonharelabs/styless.css#readme",
+    "homepage": "https://github.com/ksenginew/styless.css#readme",
     "style": "dist/styless.min.css",
     "main": "dist/styless.min.css",
     "module": "dist/styless.min.css",
     "files": [
-        "*.{css,map}"
+        "*.{css,map}",
+        "dist"
     ]
 }
