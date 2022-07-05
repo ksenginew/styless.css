@@ -84,6 +84,46 @@
             a viewport meta tag for proper responsive behaviors. Put it all
             together and your pages should look like this:
           </p>
+          <p>
+            Styless employs a handful of important global styles and settings that
+            you’ll need to be aware of when using it, all of which are almost
+            exclusively geared towards the normalization of cross browser styles.
+            Let’s dive in.
+          </p>
+          <h4>HTML5 doctype</h4>
+          <p>
+            Styless requires the use of the HTML5 doctype. Without it, you’ll see
+            some funky incomplete styling, but including it shouldn’t cause any
+            considerable hiccups.
+          </p>
+          <h4>Responsive meta tag</h4>
+          <p>
+            To ensure proper rendering and touch zooming for all devices, add the
+            responsive viewport meta tag to your <code>&lt;head&gt;</code>.
+          </p>
+          <h4>Box-sizing</h4>
+          <p>
+            For more straightforward sizing in CSS, we switch the global
+            box-sizing value from content-box to border-box. This ensures padding
+            does not affect the final computed width of an element, but it can
+            cause problems with some third-party software like Google Maps and
+            Google Custom Search Engine.
+          </p>
+          <p>
+            On the rare occasion you need to override it, use something like the
+            following:
+          </p>
+          <p>
+            Learn more about
+            <a href="https://css-tricks.com/box-sizing/" rel="nofollow">box model and sizing at CSS Tricks</a>.
+          </p>
+          <h4>Normalize</h4>
+          <p>
+            For improved cross-browser rendering, we use
+            <a href="https://github.com/sindresorhus/modern-normalize">modern-normalize</a>
+            to correct inconsistencies across browsers and devices while providing
+            slightly more opinionated resets to common HTML elements.
+          </p>
         </div>
         <div class="col">
           <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
@@ -111,50 +151,8 @@
       <p>
         For next steps, use our <a href="/examples">examples</a> to start.
       </p>
-      <h3>Important globals</h3>
-      <p>
-        Styless employs a handful of important global styles and settings that
-        you’ll need to be aware of when using it, all of which are almost
-        exclusively geared towards the normalization of cross browser styles.
-        Let’s dive in.
-      </p>
-      <h4>HTML5 doctype</h4>
-      <p>
-        Styless requires the use of the HTML5 doctype. Without it, you’ll see
-        some funky incomplete styling, but including it shouldn’t cause any
-        considerable hiccups.
-      </p>
 
-      <h4>Responsive meta tag</h4>
-      <p>
-        To ensure proper rendering and touch zooming for all devices, add the
-        responsive viewport meta tag to your <code>&lt;head&gt;</code>.
-      </p>
 
-      <p>You can see an example of this in action in the starter template.</p>
-      <h4>Box-sizing</h4>
-      <p>
-        For more straightforward sizing in CSS, we switch the global
-        box-sizing value from content-box to border-box. This ensures padding
-        does not affect the final computed width of an element, but it can
-        cause problems with some third-party software like Google Maps and
-        Google Custom Search Engine.
-      </p>
-      <p>
-        On the rare occasion you need to override it, use something like the
-        following:
-      </p>
-      <p>
-        Learn more about
-        <a href="https://css-tricks.com/box-sizing/" rel="nofollow">box model and sizing at CSS Tricks</a>.
-      </p>
-      <h4>Normalize</h4>
-      <p>
-        For improved cross-browser rendering, we use
-        <a href="https://github.com/sindresorhus/modern-normalize">modern-normalize</a>
-        to correct inconsistencies across browsers and devices while providing
-        slightly more opinionated resets to common HTML elements.
-      </p>
     </article>
   </main>
 </body>
