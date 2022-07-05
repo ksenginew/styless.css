@@ -283,9 +283,24 @@
           <div class="col">
             <pre class="language-html"><code>&lt;label for="exampleFormControlInput1"&gt;Email address&lt;/label&gt;
 &lt;input type="email" id="exampleFormControlInput1" placeholder="name@example.com"&gt;
-
 &lt;label for="exampleFormControlTextarea1"&gt;Example textarea&lt;/label&gt;
-&lt;textarea id="exampleFormControlTextarea1" rows="3"&gt;&lt;/textarea&gt;</code></pre>
+&lt;textarea id="exampleFormControlTextarea1" rows="3"&gt;&lt;/textarea&gt;
+&lt;input type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled&gt;
+&lt;input type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly&gt;
+&lt;input type="text" value="Readonly input here..." aria-label="readonly input example" readonly&gt;
+&lt;label for="formFile"&gt;Default file input example&lt;/label&gt;
+&lt;input type="file" id="formFile"&gt;
+&lt;label for="exampleColorInput"&gt;Color picker&lt;/label&gt;
+&lt;input type="color" id="exampleColorInput" value="#563d7c" title="Choose your color"&gt;
+&lt;label for="exampleDataList"&gt;Datalist example&lt;/label&gt;
+&lt;input list="datalistOptions" id="exampleDataList" placeholder="Type to search..."&gt;
+&lt;datalist id="datalistOptions"&gt;
+  &lt;option value="San Francisco"&gt;
+  &lt;option value="New York"&gt;
+  &lt;option value="Seattle"&gt;
+  &lt;option value="Los Angeles"&gt;
+  &lt;option value="Chicago"&gt;
+&lt;/datalist&gt;</code></pre>
           </div>
           <div class="col">
             <h3>Text Inputs</h3>
@@ -294,6 +309,22 @@
               <input type="email" id="exampleFormControlInput1" placeholder="name@example.com">
               <label for="exampleFormControlTextarea1">Example textarea</label>
               <textarea id="exampleFormControlTextarea1" rows="3"></textarea>
+              <input type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+              <input type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
+              <input type="text" value="Readonly input here..." aria-label="readonly input example" readonly>
+              <label for="formFile">Default file input example</label>
+              <input type="file" id="formFile">
+              <label for="exampleColorInput">Color picker</label>
+              <input type="color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+              <label for="exampleDataList">Datalist example</label>
+              <input list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+              <datalist id="datalistOptions">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+              </datalist>
             </div>
           </div>
         </div>
