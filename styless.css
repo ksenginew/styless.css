@@ -652,3 +652,24 @@ button,
   border: none;
   background-color: transparent;
 }
+
+input:not([type]),
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  display: block;
+  padding: .375rem .75rem;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid lightgray;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .375rem;
+}
