@@ -640,8 +640,7 @@ main {
 button,
 [type='button'],
 [type='reset'],
-[type='submit'],
-input::file-selector-button {
+[type='submit'] {
   display: inline-block;
   padding: 0.375rem 0.75rem;
   text-align: center;
@@ -653,10 +652,6 @@ input::file-selector-button {
   user-select: none;
   border: 1px solid lightgray;
   background-color: transparent;
-}
-
-input::file-selector-button {
-  border: none;
 }
 
 input:not([type]),
@@ -672,7 +667,6 @@ textarea {
   display: block;
   padding: .375rem .75rem;
   background-color: transparent;
-  background-clip: padding-box;
   border: 1px solid lightgray;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -683,6 +677,27 @@ textarea {
 
 input[type="file"] {
   padding: 0
+}
+
+input::file-selector-button {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: lightgray;
+}
+
+input[type="color"] {
+  background-color: transparent;
+  border: 1px solid lightgray;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .375rem;
 }
 
 select {
@@ -704,6 +719,7 @@ input[type="tel"]:hover,
 input[type="url"]:hover,
 input[type="password"]:hover,
 input[type="file"]:hover,
+input[type="color"]:hover,
 textarea:hover,
 select:hover,
 button:hover,
@@ -711,6 +727,25 @@ button:hover,
 [type='reset']:hover,
 [type='submit']:hover {
   border-color: #add8e6;
+}
+
+input:not([type]):focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus,
+input[type="color"]:focus,
+textarea:focus,
+select:focus,
+button:focus,
+[type='button']:focus,
+[type='reset']:focus,
+[type='submit']:focus {
+  outline: auto;
 }
 
 :disabled {
