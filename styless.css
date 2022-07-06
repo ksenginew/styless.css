@@ -713,25 +713,6 @@ select {
   width: 17.5rem;
 }
 
-input:not([type]):hover,
-input[type="email"]:hover,
-input[type="number"]:hover,
-input[type="search"]:hover,
-input[type="text"]:hover,
-input[type="tel"]:hover,
-input[type="url"]:hover,
-input[type="password"]:hover,
-input[type="file"]:hover,
-input[type="color"]:hover,
-textarea:hover,
-select:hover,
-button:hover,
-[type='button']:hover,
-[type='reset']:hover,
-[type='submit']:hover {
-  border-color: #add8e6;
-}
-
 input:not([type]):focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
@@ -745,10 +726,17 @@ input[type="color"]:focus,
 textarea:focus,
 select:focus,
 button:focus,
+button:hover,
+[type='button']:hover,
+[type='reset']:hover,
+[type='submit']:hover {
+  border-color: #add8e6;
+}
+
 [type='button']:focus,
 [type='reset']:focus,
 [type='submit']:focus {
-  outline: auto;
+  outline: 1px solid #add8e6;
 }
 
 :disabled {
