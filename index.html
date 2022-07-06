@@ -32,6 +32,11 @@
       border: 2px solid lightgray;
       border-radius: 0.5rem;
     }
+
+    .preview {
+      width: 100%;
+      height: 25rem;
+    }
   </style>
 </head>
 
@@ -133,23 +138,32 @@
       </div>
       <hr>
       <section>
-        <h2>Supported browsers and devices.</h2>
-        <iframe
-          src="https://browserslist.dev/?q=Pj0gMC41JSxsYXN0IDIgbWFqb3IgdmVyc2lvbnMsbm90IGRlYWQsQ2hyb21lID49IDYwLEZpcmVmb3ggPj0gNjAsRmlyZWZveCBFU1IsaU9TID49IDEyLFNhZmFyaSA%2BPSAxMixub3QgRXhwbG9yZXIgPD0gMTE%3D"></iframe>
+        <div class="row">
+          <div class="col">
+            <h2>Supported browsers and devices.</h2>
+          </div>
+          <div class="col">
+            <iframe class="preview"
+              src="https://browserslist.dev/?q=Pj0gMC41JSxsYXN0IDIgbWFqb3IgdmVyc2lvbnMsbm90IGRlYWQsQ2hyb21lID49IDYwLEZpcmVmb3ggPj0gNjAsRmlyZWZveCBFU1IsaU9TID49IDEyLFNhZmFyaSA%2BPSAxMixub3QgRXhwbG9yZXIgPD0gMTE%3D">Sorry!
+              preview is not supported.</iframe>
+          </div>
+        </div>
       </section>
       <hr>
       <section>
-<h2>Layouts</h2>
+        <h2>Layouts</h2>
 
-<div class="row">
-  <div class="col">
-    <h3>Containers</h3>
-    <div class="example"><main>Hello World!</main></div>
-  </div>
-  <div class="col">
-    <pre class="language-html"><code>&lt;main&gt;Hello World!&lt;/main&gt;</code></pre>
-  </div>
-</div>
+        <div class="row">
+          <div class="col">
+            <h3>Containers</h3>
+            <div class="example">
+              <main>Hello World!</main>
+            </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code>&lt;main&gt;Hello World!&lt;/main&gt;</code></pre>
+          </div>
+        </div>
       </section>
       <section>
         <h2>Components</h2>
