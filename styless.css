@@ -731,6 +731,7 @@ button:hover,
 [type='reset']:hover,
 [type='submit']:hover {
   border-color: #add8e6;
+  outline: none;
 }
 
 [type='button']:focus,
