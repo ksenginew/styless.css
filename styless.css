@@ -482,7 +482,6 @@ pre code {
 kbd {
   padding: 0.1875rem 0.375rem;
   font-size: 0.875em;
-  border-radius: 0.25rem;
 }
 
 kbd kbd {
@@ -669,7 +668,6 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: .375rem;
   min-width: 17.5rem;
   width: 17.5rem;
 }
@@ -697,7 +695,6 @@ input[type="color"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: .375rem;
 }
 
 select {
@@ -705,7 +702,6 @@ select {
   background-color: transparent;
   background-clip: padding-box;
   border: 1px solid lightgray;
-  border-radius: .375rem;
   min-width: 17.5rem;
   height: 2.02rem;
   width: 17.5rem;
