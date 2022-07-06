@@ -1,47 +1,63 @@
 # Styless.CSS
+
 Minimal classless CSS framework for faster development.
 
 [Report bug](https://github.com/ksenginew/styless.css/issues/new?template=bug_report.md)
 ·
 [Request feature](https://github.com/ksenginew/styless.css/issues/new?template=feature_request.md)
 
----
 
-## Quick start
+---  
 
-Looking to quickly add Styless to your project? Use jsDelivr, a free open source CDN. Using a package manager or need to download the source files? Head to the [downloads](https://styless.netlify.app/test) page.
+## Get started any way you want
 
-### Installation
+Jump right into building with Styless—use the CDN, install it via package manager, or download the sourcecode.
 
-Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS.
+### Install via package manager
+
+Install Styless’s source Sass and JavaScript files via npm  . Package managed installs don’t include documentation or our full build scripts.
+
+-   Npm
+    
+    ```sh
+    npm install styless.css
+    ```
+    
+-   Yarn
+    
+    ```sh
+    yarn add styless.css
+    ```
+    
+
+### Include via CDN
+
+When you only need to include Styless’s compiled CSS or JS, you can use jsDelivr. See it in action with our simple quick start, or browse the examples to jumpstart your next project.
 
 ```html
-<link
-    href="https://cdn.jsdelivr.net/npm/styless@0.0.0/styless.min.css"
-    rel="stylesheet"
-    crossorigin="anonymous"
-/>
+<link href="https://cdn.jsdelivr.net/npm/styless.css@0.0.2/dist/styless.min.css" rel="stylesheet" crossorigin="anonymous" />
 ```
+
+----------
 
 ### Starter template
 
 Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
 
+-   **HTML5 doctype**
+-   **Responsive meta tag**
+-   **Box-sizing**
+-   **Normalize**
+
+For next steps, use our  [examples](https://styless-git-dev-ksenginew.vercel.app/examples)  to start.
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <!-- Styless CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/styless@0.0.0/styless.min.css"
-            rel="stylesheet"
-            crossorigin="anonymous"
-        />
-
+        <link href="https://cdn.jsdelivr.net/npm/styless.css@0.0.2/dist/styless.min.css" rel="stylesheet" crossorigin="anonymous" />
         <title>Hello, world!</title>
     </head>
     <body>
@@ -50,7 +66,9 @@ Be sure to have your pages set up with the latest design and development standar
 </html>
 ```
 
-## Bugs and feature requests
+----------
+
+## Bugs and feature requests  
 
 Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/ksenginew/styless.css/blob/main/.github/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](issues/new).
 
@@ -62,7 +80,8 @@ Please read through our [contributing guidelines](https://github.com/ksenginew/s
 
 Get updates on Styless's development and chat with the project maintainers and community members.
 
-[![Follow us on twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/harelabs).
+[![Follow us on twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/harelabs)
+·
 [![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](ksengine.github@gmail.com).
 
 ## Copyright and license

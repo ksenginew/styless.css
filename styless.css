@@ -465,7 +465,7 @@ pre {
 
 code {
   word-wrap: break-word;
-  font-weight: 600;
+  font-style: italic;
 }
 
 /* Streamline the style when inside anchors to avoid broken underline and more */
@@ -478,7 +478,6 @@ pre code {
   font-size: inherit;
   color: inherit;
   word-break: normal;
-  font-weight: normal;
 }
 
 kbd {
