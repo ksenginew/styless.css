@@ -673,6 +673,7 @@ textarea {
   appearance: none;
   border-radius: .375rem;
   min-width: 17.5rem;
+  width: 17.5rem;
 }
 
 input[type="file"] {
@@ -688,7 +689,8 @@ input::file-selector-button {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  background-color: lightgray;
+  border: none;
+  background-color: whitesmoke;
 }
 
 input[type="color"] {
@@ -708,6 +710,7 @@ select {
   border-radius: .375rem;
   min-width: 17.5rem;
   height: 2.02rem;
+  width: 17.5rem;
 }
 
 input:not([type]):hover,
