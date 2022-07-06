@@ -22,7 +22,9 @@ Use a better box model (opinionated).
 */
 
 html {
-  line-height: 1.15;
+  /* line-height: 1.15; */
+  /* Better line height */
+  line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
@@ -183,7 +185,8 @@ textarea {
   /* 1 */
   font-size: 100%;
   /* 1 */
-  line-height: 1.15;
+  /* line-height: 1.15; */
+  line-height: inherit;
   /* 1 */
   margin: 0;
   /* 2 */
@@ -311,11 +314,6 @@ summary {
     /* Add smooth scrolling */
     scroll-behavior: smooth;
   }
-}
-
-html {
-  /* Better line height */
-  line-height: 1.5;
 }
 
 body {
