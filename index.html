@@ -66,7 +66,14 @@
             <!--You can also use our npm template repo to
           quickly generate a Styless project via npm.-->
           </p>
-          <pre><code>npm install styless.css</code></pre>
+          <ul>
+            <li>Npm
+              <pre><code>npm install styless.css</code></pre>
+            </li>
+            <li>Yarn
+              <pre><code>yarn add styless.css</code></pre>
+            </li>
+          </ul>
           <!--<pre><code>gem install bootstrap -v 5.2.0-beta1</code></pre>-->
           <!--Read our installation docs for more info and additional package managers.-->
         </section>
@@ -126,9 +133,33 @@
       </div>
       <hr>
       <section>
-        <h2>Components</h2>
+        <h2>Supported browsers and devices.</h2>
+        <iframe
+          src="https://browserslist.dev/?q=Pj0gMC41JSxsYXN0IDIgbWFqb3IgdmVyc2lvbnMsbm90IGRlYWQsQ2hyb21lID49IDYwLEZpcmVmb3ggPj0gNjAsRmlyZWZveCBFU1IsaU9TID49IDEyLFNhZmFyaSA%2BPSAxMixub3QgRXhwbG9yZXIgPD0gMTE%3D"></iframe>
+      </section>
+      <hr>
+      <section>
+<h2>Layouts</h2>
 
+<div class="row">
+  <div class="col">
+    <h3>Containers</h3>
+    <div class="example"><main>Hello World!</main></div>
+  </div>
+  <div class="col">
+    <pre class="language-html"><code>&lt;main&gt;Hello World!&lt;/main&gt;</code></pre>
+  </div>
+</div>
+      </section>
+      <section>
+        <h2>Components</h2>
         <div class="row">
+          <div class="col">
+            <h3>Typography</h3>
+            <div class="example" id="headings">
+              <script>document.getElementById('headings').innerHTML = `<h1>Heading</h1><h2>Heading</h2><h3>Heading</h3><h4>Heading</h4><h5>Heading</h5><h6>Heading</h6><p>This is a paragraph.</p><strong>Bolded</strong><em>Italicized</em><a>Colored</a><u>Underlined</u>`</script>
+            </div>
+          </div>
           <div class="col">
             <pre class="language-html"><code>&lt;!-- Standard Headings --&gt;
 &lt;h1&gt;Heading&lt;/h1&gt;
@@ -146,12 +177,6 @@
 &lt;em&gt;Italicized&lt;/em&gt;
 &lt;a&gt;Colored&lt;/a&gt;
 &lt;u&gt;Underlined&lt;/u&gt;</code></pre>
-          </div>
-          <div class="col">
-            <h3>Typography</h3>
-            <div class="example" id="headings">
-              <script>document.getElementById('headings').innerHTML = `<h1>Heading</h1><h2>Heading</h2><h3>Heading</h3><h4>Heading</h4><h5>Heading</h5><h6>Heading</h6><p>This is a paragraph.</p><strong>Bolded</strong><em>Italicized</em><a>Colored</a><u>Underlined</u>`</script>
-            </div>
           </div>
         </div>
         <hr>
