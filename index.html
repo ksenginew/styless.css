@@ -224,7 +224,6 @@
         <p>All HTML headings, h1 through h6, are available.</p>
         <div class="row">
           <div class="col">
-
             <table>
               <thead>
                 <tr>
@@ -279,16 +278,7 @@
 &lt;h3&gt;h3. heading&lt;/h3&gt;
 &lt;h4&gt;h4. heading&lt;/h4&gt;
 &lt;h5&gt;h5. heading&lt;/h5&gt;
-&lt;h6&gt;h6. heading&lt;/h6&gt;
-
-&lt;!-- Base type size --&gt;
-&lt;p&gt;This is a paragraph.&lt;/p&gt;
-
-&lt;!-- Other styled text tags --&gt;
-&lt;strong&gt;Bolded&lt;/strong&gt;
-&lt;em&gt;Italicized&lt;/em&gt;
-&lt;a&gt;Colored&lt;/a&gt;
-&lt;u&gt;Underlined&lt;/u&gt;</code></pre>
+&lt;h6&gt;h6. heading&lt;/h6&gt;</code></pre>
           </div>
         </div>
         <h4>Inline text elements</h4>
@@ -297,14 +287,16 @@
         </p>
         <div class="row">
           <div class="col">
-            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-            <p><del>This line of text is meant to be treated as deleted text.</del></p>
-            <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-            <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-            <p><u>This line of text will render as underlined.</u></p>
-            <p><small>This line of text is meant to be treated as fine print.</small></p>
-            <p><strong>This line rendered as bold text.</strong></p>
-            <p><em>This line rendered as italicized text.</em></p>
+            <div class="example">
+              <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+              <p><del>This line of text is meant to be treated as deleted text.</del></p>
+              <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+              <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+              <p><u>This line of text will render as underlined.</u></p>
+              <p><small>This line of text is meant to be treated as fine print.</small></p>
+              <p><strong>This line rendered as bold text.</strong></p>
+              <p><em>This line rendered as italicized text.</em></p>
+            </div>
           </div>
           <div class="col">
             <pre class="language-html"><code>&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
@@ -315,6 +307,38 @@
 &lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;</code></pre>
+          </div>
+        </div>
+        <p>Beware that those tags should be used for semantic purpose:</p>
+        <ul>
+          <li><code>&lt;mark&gt;</code> represents text which is marked or highlighted for reference or notation
+            purposes.</li>
+          <li><code>&lt;small&gt;</code> represents side-comments and small print, like copyright and legal text.</li>
+          <li><code>&lt;s&gt;</code> represents element that are no longer relevant or no longer accurate.</li>
+          <li><code>&lt;u&gt;</code> represents a span of inline text which should be rendered in a way that indicates
+            that it has a non-textual annotation.</li>
+        </ul>
+        <p>While not shown above, feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5.
+          <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance, while
+          <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.
+        </p>
+        <h2>Abbreviations</h2>
+        <p>Stylized implementation of HTML’s <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show
+          the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide
+          additional context on hover and to users of assistive technologies.
+        </p>
+
+        <div class="row">
+          <div class="col">
+            <div class="example">
+              <p><abbr title="attribute">attr</abbr></p>
+              <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+            </div>
+          </div>
+          <div class="col">
+            <pre
+              class="language-html"><code>&lt;p&gt;&lt;abbr title=&quot;attribute&quot;&gt;attr&lt;/abbr&gt;&lt;/p&gt;
+&lt;p&gt;&lt;abbr title=&quot;HyperText Markup Language&quot; class=&quot;initialism&quot;&gt;HTML&lt;/abbr&gt;&lt;/p&gt;</code></pre>
           </div>
         </div>
       </section>
