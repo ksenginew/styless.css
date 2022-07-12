@@ -384,7 +384,6 @@ p,
 ol,
 ul,
 dl,
-blockquote,
 pre,
 input:not([type]),
 input[type="email"],
@@ -451,6 +450,12 @@ li>p {
 blockquote {
   padding-left: 1rem;
   border-left: 0.25rem solid #d3d3d3;
+}
+
+figure>blockquote+figcaption {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  color: gray;
 }
 
 pre {
