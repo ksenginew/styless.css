@@ -359,6 +359,37 @@
 &lt;/blockquote&gt;</code></pre>
           </div>
         </div>
+        <h5>Naming a source</h5>
+        <p>The HTML spec requires that blockquote attribution be placed outside the <code>&lt;blockquote&gt;</code>.
+          When providing attribution, wrap your <code>&lt;blockquote&gt;</code> in a <code>&lt;figure&gt;</code> and use
+          a <code>&lt;figcaption&gt;</code> or a block level element (e.g., <code>&lt;p&gt;</code>) with the
+          <code>.blockquote-footer</code> class. Be sure to wrap the name of the source work in
+          <code>&lt;cite&gt;</code> as well.
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="example">
+              <figure>
+                <blockquote class="blockquote">
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+              </figure>
+              </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code>&lt;figure&gt;
+  &lt;blockquote class=&quot;blockquote&quot;&gt;
+    &lt;p&gt;A well-known quote, contained in a blockquote element.&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;figcaption class=&quot;blockquote-footer&quot;&gt;
+    Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+          </div>
+        </div>
       </section>
       <section>
         <h2>Components</h2>
