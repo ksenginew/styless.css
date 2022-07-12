@@ -448,8 +448,7 @@ li>p {
 }
 
 blockquote {
-  padding: 0 1rem;
-  background-color: whitesmoke;
+  font-size: 1.25rem;
 }
 
 figure>blockquote+figcaption {
