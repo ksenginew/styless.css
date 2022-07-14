@@ -700,6 +700,14 @@ select {
   width: 17.5rem;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  width: 1em;
+  height: 1em;
+  margin-top: .25em;
+  vertical-align: top;
+}
+
 input:not([type]):focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
