@@ -765,20 +765,21 @@ label {
 }
 
 details {
+  width: 100%;
   border: 1px solid lightgray;
   overflow: hidden;
   margin-bottom: 0;
   padding: 0 1rem;
 }
 
-details > summary{
+details>summary {
   padding: 1rem;
   margin: 0 -1rem;
   font-size: 1rem;
-  background-color: lightblue;
+  background-color: #ebf6f9;
 }
 
-details + details{
+details+details {
   border-top: none;
 }
 
