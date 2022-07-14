@@ -654,7 +654,7 @@ input[type="url"],
 input[type="password"],
 input[type="file"],
 textarea {
-  display: block;
+  display: inline-block;
   padding: .375rem .75rem;
   background-color: transparent;
   border: 1px solid lightgray;
@@ -691,7 +691,7 @@ input[type="color"] {
 }
 
 select {
-  display: block;
+  display: inline-block;
   background-color: transparent;
   background-clip: padding-box;
   border: 1px solid lightgray;
