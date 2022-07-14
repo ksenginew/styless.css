@@ -777,6 +777,7 @@ details>summary {
   margin: 0 -1rem;
   font-size: 1rem;
   background-color: #ebf6f9;
+  cursor: pointer;
 }
 
 details+details {
