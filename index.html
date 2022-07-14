@@ -602,28 +602,7 @@
         <p>Here’s a quick example to demonstrate Styless’s form styles. Keep reading for documentation on for more.
         </p>
         <div class="row">
-          <div class="col">
-            <pre class="language-html"><code>&lt;label for="exampleFormControlInput1"&gt;Email address&lt;/label&gt;
-&lt;input type="email" id="exampleFormControlInput1" placeholder="name@example.com"&gt;
-&lt;label for="exampleFormControlTextarea1"&gt;Example textarea&lt;/label&gt;
-&lt;textarea id="exampleFormControlTextarea1" rows="3"&gt;&lt;/textarea&gt;
-&lt;input type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled&gt;
-&lt;input type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly&gt;
-&lt;input type="text" value="Readonly input here..." aria-label="readonly input example" readonly&gt;
-&lt;label for="formFile"&gt;Default file input example&lt;/label&gt;
-&lt;input type="file" id="formFile"&gt;
-&lt;label for="exampleColorInput"&gt;Color picker&lt;/label&gt;
-&lt;input type="color" id="exampleColorInput" value="#563d7c" title="Choose your color"&gt;
-&lt;label for="exampleDataList"&gt;Datalist example&lt;/label&gt;
-&lt;input list="datalistOptions" id="exampleDataList" placeholder="Type to search..."&gt;
-&lt;datalist id="datalistOptions"&gt;
-  &lt;option value="San Francisco"&gt;
-  &lt;option value="New York"&gt;
-  &lt;option value="Seattle"&gt;
-  &lt;option value="Los Angeles"&gt;
-  &lt;option value="Chicago"&gt;
-&lt;/datalist&gt;</code></pre>
-          </div>
+
           <div class="col">
             <div class="example">
               <form>
@@ -645,6 +624,26 @@
                 <button type="submit">Submit</button>
               </form>
             </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code>&lt;form&gt;
+  &lt;label for=&quot;exampleInputEmail1&quot;&gt;
+    Email address
+    &lt;input type=&quot;email&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot;&gt;
+    &lt;small&gt;We&#39;ll never share your email with anyone else.&lt;/small&gt;
+  &lt;/label&gt;
+  &lt;label for=&quot;exampleInputPassword1&quot;&gt;
+    Password
+    &lt;input type=&quot;password&quot; id=&quot;exampleInputPassword1&quot;&gt;
+  &lt;/label&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;exampleCheck1&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; id=&quot;exampleCheck1&quot;&gt;
+      Check me out
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
           </div>
         </div>
       </section>
