@@ -743,13 +743,14 @@ button:disabled,
 [type='submit']:disabled,
 input:disabled,
 textarea:disabled,
-select:disabled fieldset:disabled>:button,
-fieldset:disabled>[type='button'],
-fieldset:disabled>[type='reset'],
-fieldset:disabled>[type='submit'],
-fieldset:disabled>input,
-fieldset:disabled>textarea,
-fieldset:disabled>select {
+select:disabled,
+fieldset:disabled button,
+fieldset:disabled [type='button'],
+fieldset:disabled [type='reset'],
+fieldset:disabled [type='submit'],
+fieldset:disabled input,
+fieldset:disabled textarea,
+fieldset:disabled select {
   opacity: 0.38;
   cursor: not-allowed;
 }
