@@ -730,13 +730,26 @@ button:hover,
   outline: none;
 }
 
+button:focus,
 [type='button']:focus,
 [type='reset']:focus,
 [type='submit']:focus {
   outline: 1px solid #add8e6;
 }
 
-:disabled {
+button:disabled,
+[type='button']:disabled,
+[type='reset']:disabled,
+[type='submit']:disabled,
+input:disabled,
+textarea:disabled,
+select:disabled fieldset:disabled>:button,
+fieldset:disabled>[type='button'],
+fieldset:disabled>[type='reset'],
+fieldset:disabled>[type='submit'],
+fieldset:disabled>input,
+fieldset:disabled>textarea,
+fieldset:disabled>select {
   opacity: 0.38;
   cursor: not-allowed;
 }
