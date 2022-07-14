@@ -665,7 +665,7 @@
         <div class="row">
           <div class="col">
             <div class="example">
-              <label for="inputPassword5" class="form-label">
+              <label for="inputPassword5">
                 Password
                 <input type="password" id="inputPassword5" aria-describedby="passwordHelpBlock">
                 <small id="passwordHelpBlock">
@@ -766,7 +766,132 @@
           technology users, a lack of visible label text may still be problematic for certain users. Some form of
           visible label is generally the best approach, both for accessibility and usability.
         </p>
-
+        <h3>Form controls</h3>
+        <p>Give textual form controls like <code>&lt;input&gt;</code>s and <code>&lt;textarea&gt;</code>s an upgrade
+          with custom styles, sizing, focus states, and more.</p>
+        <h4>Example</h4>
+        <div class="row">
+          <div class="col">
+            <div class="example">
+              <label for="exampleFormControlInput1">
+                Email address
+                <input type="email" id="exampleFormControlInput1" placeholder="name@example.com">
+              </label>
+              <label for="exampleFormControlTextarea1">
+                Example textarea
+                <textarea id="exampleFormControlTextarea1" rows="3"></textarea>
+              </label>
+            </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code></code></pre>
+          </div>
+        </div>
+        <h4>Sizing</h4>
+        <p>Set heights using <code>font-size</code>.</p>
+        <div class="row">
+          <div class="col">
+            <div class="example">
+              <input style="font-size: 1.25rem;" type="text" placeholder="form control lg"
+                aria-label="form-control-lg example">
+              <input type="text" placeholder="Default input" aria-label="default input example">
+              <input style="font-size: .75rem;" type="text" placeholder=" form control sm"
+                aria-label="form-control-sm example">
+            </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code></code></pre>
+          </div>
+        </div>
+        <h4>Disabled</h4>
+        <p>Add the <code>disabled</code> boolean attribute on an input to give it a grayed out appearance and remove
+          pointer events.</p>
+        <div class="row">
+          <div class="col">
+            <div class="example">
+              <input type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+              <input type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
+            </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code></code></pre>
+          </div>
+        </div>
+        <h4>Readonly</h4>
+        <p>Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input’s value.</p>
+        <div class="row">
+          <div class="col">
+            <div class="example">
+              <input type="text" value="Readonly input here..." aria-label="readonly input example" readonly>
+            </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code></code></pre>
+          </div>
+        </div>
+        <h4>File input</h4>
+        <div class="row">
+          <div class="col">
+            <div class="example">
+              <label for="formFile">Default file input example
+                <input type="file" id="formFile">
+              </label>
+              <label for="formFileMultiple">Multiple files input example
+                <input type="file" id="formFileMultiple" multiple>
+              </label>
+              <label for="formFileDisabled">Disabled file input example
+                <input type="file" id="formFileDisabled" disabled>
+              </label>
+              <label for="formFileSm">Small file input example
+                <input style="font-size: .75rem;" id="formFileSm" type="file">
+              </label>
+              <label for="formFileLg">Large file input example
+                <input style="font-size: 1.25rem;" id="formFileLg" type="file">
+              </label>
+            </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code></code></pre>
+          </div>
+        </div>
+        </div>
+        <h4>Color input</h4>
+        <div class="row">
+          <div class="col">
+            <div class="example">
+              <label for="exampleColorInput">Color picker</label>
+              <input type="color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+            </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code></code></pre>
+          </div>
+        </div>
+        <h4>Datalists</h4>
+        <p>Datalists allow you to create a group of <code>&lt;option&gt;</code>s that can be accessed (and
+          autocompleted) from within an <code>&lt;input&gt;</code>. These are similar to <code>&lt;select&gt;</code>
+          elements, but come with more menu styling limitations and differences. While most browsers and operating
+          systems include some support for <code>&lt;datalist&gt;</code> elements, their styling is inconsistent at
+          best.</p>
+        <p>Learn more about <a href="https://caniuse.com/datalist">support for datalist elements</a>.</p>
+        <div class="row">
+          <div class="col">
+            <div class="example">
+              <label for="exampleDataList">Datalist example</label>
+              <input list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+              <datalist id="datalistOptions">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+              </datalist>
+            </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code></code></pre>
+          </div>
+        </div>
       </section>
       <hr>
     </article>

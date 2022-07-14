@@ -744,7 +744,7 @@ button:disabled,
 input:disabled,
 textarea:disabled,
 select:disabled {
-  opacity: 0.38;
+  opacity: 0.8;
   cursor: not-allowed;
 }
 
