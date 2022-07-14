@@ -600,7 +600,8 @@
         <p>Be sure to use an appropriate <code>type</code> attribute on all inputs (e.g., <code>email</code> for email
           address or <code>number</code> for numerical information) to take advantage of newer input controls like email
           verification, number selection, and more.</p>
-        <p>Here’s a quick example to demonstrate Styless’s form styles. Keep reading for documentation on for more.
+        <p>
+          Here’s a quick example to demonstrate Styless’s form styles. Keep reading for documentation on for more.
         </p>
         <div class="row">
           <div class="col">
@@ -646,6 +647,118 @@
 &lt;/form&gt;</code></pre>
           </div>
         </div>
+        <h4>Form text</h4>
+        <div>
+          <h5>Associating form text with form controls</h5>
+          <p>
+            Form text should be explicitly associated with the form control it relates to using the
+            <code>aria-describedby</code> attribute. This will ensure that assistive technologies—such as screen
+            readers—will announce this form text when the user focuses or enters the control.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="example">
+              <label for="inputPassword5" class="form-label">
+                Password
+                <input type="password" id="inputPassword5" aria-describedby="passwordHelpBlock">
+                <small id="passwordHelpBlock">
+                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain
+                  spaces,
+                  special characters, or emoji.
+                </small>
+              </label>
+            </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code>&lt;label for=&quot;inputPassword5&quot; class=&quot;form-label&quot;&gt;
+  Password
+  &lt;input type=&quot;password&quot; id=&quot;inputPassword5&quot; aria-describedby=&quot;passwordHelpBlock&quot;&gt;
+  &lt;small id=&quot;passwordHelpBlock&quot;&gt;
+    Your password must be 8-20 characters long, contain letters and numbers, and must not contain
+    spaces,
+    special characters, or emoji.
+  &lt;/small&gt;
+&lt;/label&gt;</code></pre>
+          </div>
+        </div>
+        <p>Inline text can use any typical inline HTML element (be it a
+          <code>&lt;span&gt;</code>,<code>&lt;small&gt;</code>, or something else).
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="example">
+              <label for="inputPassword6">Password</label>
+              <input type="password" id="inputPassword6" aria-describedby="passwordHelpInline">
+              <small id="passwordHelpInline">
+                Must be 8-20 characters long.
+              </small>
+            </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code></code></pre>
+          </div>
+        </div>
+        <h4>Disabled forms</h4>
+        <p>Add the <code>disabled</code> boolean attribute on an input to prevent user interactions and make it appear
+          lighter.</p>
+        <pre
+          class="language-html"><code><input id="disabledInput" type="text" placeholder="Disabled input here..." disabled></code></pre>
+        <p>Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls
+          within. Browsers treat all native form controls (<code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, and
+          <code>&lt;button&gt;</code> elements) inside a <code>&lt;fieldset disabled&gt;</code> as disabled, preventing
+          both keyboard and mouse interactions on them.
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="example">
+              <form>
+                <fieldset disabled>
+                  <legend>Disabled fieldset example</legend>
+                  <label for="disabledTextInput">Disabled input
+                    <input type="text" id="disabledTextInput" placeholder="Disabled input"></label>
+                  <label for="disabledSelect">Disabled select menu
+                    <select id="disabledSelect">
+                      <option>Disabled select</option>
+                    </select>
+                  </label>
+                  <label for="disabledFieldsetCheck">
+                    <input type="checkbox" id="disabledFieldsetCheck" disabled>
+                    Can't check this
+                  </label>
+                  <button type="submit">Submit</button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code></code></pre>
+          </div>
+        </div>
+        <h4>Accessibility</h4>
+        <p>Ensure that all form controls have an appropriate accessible name so that their purpose can be conveyed to
+          users of assistive technologies. The simplest way to achieve this is to use a <code>&lt;label&gt;</code>
+          element, or—in the case of buttons—to include sufficiently descriptive text as part of the
+          <code>&lt;button&gt;...&lt;/button&gt;</code> content.
+        </p>
+        <p>For situations where it’s not possible to include a visible <code>&lt;label&gt;</code> or appropriate text
+          content, there are alternative ways of still providing an accessible name, such as:</p>
+        <ul>
+          <li>Hidden <code>&lt;label&gt;</code> elements</li>
+          <li>Pointing to an existing element that can act as a label using <code>aria-labelledby</code></li>
+          <li>Providing a <code>title</code> attribute</li>
+          <li>Explicitly setting the accessible name on an element using <code>aria-label</code></li>
+        </ul>
+        <p>If none of these are present, assistive technologies may resort to using the <code>placeholder</code>
+          attribute as a fallback for the accessible name on <code>&lt;input&gt;</code> and
+          <code>&lt;textarea&gt;</code> elements. The examples in this section provide a few suggested, case-specific
+          approaches.
+        </p>
+        <p>While using visually hidden content (<code>aria-label</code>, and even
+          <code>placeholder</code> content, which disappears once a form field has content) will benefit assistive
+          technology users, a lack of visible label text may still be problematic for certain users. Some form of
+          visible label is generally the best approach, both for accessibility and usability.
+        </p>
       </section>
       <hr>
     </article>
