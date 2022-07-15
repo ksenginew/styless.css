@@ -694,10 +694,9 @@ input[type="color"] {
 select {
   display: block;
   background-color: transparent;
-  background-clip: padding-box;
   border: 1px solid lightgray;
   min-width: 17.5rem;
-  height: 2.02rem;
+  padding: .375rem .75rem;
   width: 17.5rem;
 }
 
