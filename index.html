@@ -987,6 +987,48 @@
             <pre class="language-html"><code></code></pre>
           </div>
         </div>
+        <h3>Checks and radios</h3>
+        <h4>Checks</h4>
+        <div class="row">
+          <div class="col">
+            <div class="example">
+              <div>
+                <input type="checkbox" value="" id="flexCheckDefault">
+                <label for="flexCheckDefault">
+                  Default checkbox
+                </label>
+              </div>
+              <div>
+                <input type="checkbox" value="" id="flexCheckChecked" checked>
+                <label for="flexCheckChecked">
+                  Checked checkbox
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code></code></pre>
+          </div>
+        </div>
+        <h3>Indeterminate</h3>
+        <p>Checkboxes can utilize the <code>:indeterminate</code> pseudo class when manually set via JavaScript (there
+          is no available HTML attribute for specifying it).</p>
+        <div class="row">
+          <div class="col">
+            <div class="example">
+              <input type="checkbox" value="" id="flexCheckIndeterminate">
+              <label for="flexCheckIndeterminate">
+                Indeterminate checkbox
+              </label>
+              <br>
+              <button onclick="document.getElementById('flexCheckIndeterminate').indeterminate = true;">Make it
+                indeterminate</button>
+            </div>
+          </div>
+          <div class="col">
+            <pre class="language-html"><code></code></pre>
+          </div>
+        </div>
       </section>
       <hr>
     </article>
