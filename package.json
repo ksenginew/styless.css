@@ -3,7 +3,7 @@
     "version": "0.0.2",
     "description": "Minimal classless CSS framework for faster development.",
     "scripts": {
-        "build": "npx clean-css-cli --source-map -o dist/styless.min.css styless.css && cp styless.css dist/styless.css"
+        "start": "http-server"
     },
     "repository": {
         "type": "git",
@@ -29,5 +29,10 @@
     "files": [
         "*.{css,map}",
         "dist"
-    ]
+    ],
+    "devDependencies": {
+        "http-server": "^14.1.1",
+        "modern-normalize": "^2.0.0",
+        "vite": "^4.4.4"
+    }
 }

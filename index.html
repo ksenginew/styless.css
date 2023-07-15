@@ -1,138 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <link rel="stylesheet" href="src/index.css">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="/docs/light-syntax.css" rel="stylesheet" />
-  <!-- Styless.CSS -->
-  <link href="styless.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/components/prism-core.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
-  <title>Styless - Minmal classless CSS framework.</title>
-  <style>
-    .banner {
-      padding: 10rem 0;
-    }
-
-    .row {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .col {
-      flex: 1;
-      min-width: 0
-    }
-  </style>
-</head>
-
-<body>
-  <main>
-    <article>
-      <div class="banner">
-        <h1 style="text-align:center;" align="center">
-          Build fast, simple sites with Styless
-        </h1>
-        <p style="text-align:center;" align="center">
-          Quickly write simple sites with Styless, a simple front-end open
-          source stylesheet. Perfect for content first sites or blogs.
-        </p>
-        <div style="text-align: center;">
-          <button onclick="location.href='guide'">Get Started</button>
-          .
-          <button onclick="location.href='download'">Download</button>
-        </div>
-      </div>
-      <h2>Get started any way you want</h2>
-      <p>
-        Jump right into building with Bootstrap—use the CDN, install it via package manager, or download the sourcecode.
-      </p>
-      <div class="row">
-        <section class="col">
-          <h3>Install via package manager</h3>
-          <p>
-            Install Styless’s source Sass and JavaScript files via npm
-            <!--, RubyGems, Composer, or Meteor-->. Package managed
-            installs don’t include documentation or our full build scripts.
-            <!--You can also use our npm template repo to
-          quickly generate a Styless project via npm.-->
-          </p>
-          <pre><code>npm install styless.css</code></pre>
-          <!--<pre><code>gem install bootstrap -v 5.2.0-beta1</code></pre>-->
-          <!--Read our installation docs for more info and additional package managers.-->
-        </section>
-        <section class="col">
-          <h3>Include via CDN</h3>
-          <p>
-            When you only need to include Styless’s compiled CSS or JS, you can use jsDelivr. See it in action with
-            our simple quick start, or browse the examples to jumpstart your next project.
-          </p>
-
-          <pre
-            class="language-html"><code>&lt;link href=&quot;https://cdn.jsdelivr.net/npm/styless.css@0.0.2/dist/styless.min.css&quot; rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot; /&gt;</code></pre>
-        </section>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col">
-          <h3>Starter template</h3>
-          <p>
-            Be sure to have your pages set up with the latest design and
-            development standards. That means using an HTML5 doctype and including
-            a viewport meta tag for proper responsive behaviors. Put it all
-            together and your pages should look like this:
-          </p>
-          <ul>
-            <li>
-              <strong>HTML5 doctype</strong>
-            </li>
-            <li>
-              <strong>Responsive meta tag</strong>
-            </li>
-            <li>
-              <strong>Box-sizing</strong>
-            </li>
-            <li>
-              <strong>Normalize</strong>
-            </li>
-          </ul>
-          <p>
-            For next steps, use our <a href="/examples">examples</a> to start.
-          </p>
-        </div>
-        <div class="col">
-          <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot; /&gt;
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
-        &lt;link href=&quot;https://cdn.jsdelivr.net/npm/styless.css@0.0.2/dist/styless.min.css&quot; rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot; /&gt;
-        &lt;title&gt;Hello, world!&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Hello, world!&lt;/h1&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-        </div>
-      </div>
-      <hr>
-      <section>
-        <h2>Components</h2>
-        <h3>Buttons</h3>
-        <div class="row">
-          <div class="col">
-            <button>Hello World!</button>
-          </div>
-          <div class="col">
-            <pre class="language-html"><code></code></pre>
-          </div>
-        </div>
-      </section>
-
-    </article>
-  </main>
-</body>
-
+  </head>
+  <body style="margin:1rem;">
+    <a href="tests/buttons.html">Buttons</a>
+    <a href="tests/cards.html">Cards</a>
+    <a href="tests/checkboxes.html">Check</a>
+    <a href="#nolink" class="button button-filled" style="--sl-btn-color: 270,100%">Go somewhere</a>
+    <br>
+    <input class="field">
+    <input class="field border">
+    <label class="field">Label:<input ></label>
+    <label class="field border">Label:<input ></label>
+  </body>
 </html>
