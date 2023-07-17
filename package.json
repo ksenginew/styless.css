@@ -3,7 +3,7 @@
     "version": "0.0.2",
     "description": "Minimal classless CSS framework for faster development.",
     "scripts": {
-        "start": "vite"
+        "start": "vite ."
     },
     "repository": {
         "type": "git",
