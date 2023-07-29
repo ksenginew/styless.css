@@ -1,4 +1,4 @@
-import { defineConfig, sharpImageService } from 'astro/config';
+import { defineConfig, squooshImageService } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
@@ -22,11 +22,12 @@ export default defineConfig({
 					autogenerate: { directory: 'reference' },
 				},
 			],
+			customCss:['./src/custom.css']
 		}),
 	],
 	experimental: {
 		assets: true,
 	},
 	// Process images with sharp: https://docs.astro.build/en/guides/assets/#using-sharp
-	image: { service: sharpImageService() },
+	image: { service: squooshImageService() },
 });
